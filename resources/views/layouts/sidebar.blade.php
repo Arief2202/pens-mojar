@@ -4,7 +4,7 @@
              class="c-sidebar-brand-full" alt="Brand Logo">
         <img src="https://infyom.com/images/logo/blue_logo_150x150.png" width="46" height="46"
              class="c-sidebar-brand-minimized" alt="Brand Logo"> --}}
-        <
+             
              <h3>Mojar-App</h3>
     </div>
     <ul class="c-sidebar-nav">
