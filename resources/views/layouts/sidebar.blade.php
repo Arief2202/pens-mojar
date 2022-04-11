@@ -4,8 +4,10 @@
              class="c-sidebar-brand-full" alt="Brand Logo">
         <img src="https://infyom.com/images/logo/blue_logo_150x150.png" width="46" height="46"
              class="c-sidebar-brand-minimized" alt="Brand Logo"> --}}
-             
-             <h3>Mojar-App</h3>
+
+             <h3 class="c-sidebar-brand-full" alt="Brand Logo" >Mojar App</h3>
+             <img src="images/logomojar.png"" width="46" height="46"
+             class="c-sidebar-brand-minimized" alt="Brand Logo">
     </div>
     <ul class="c-sidebar-nav">
         @include('layouts.menu')
