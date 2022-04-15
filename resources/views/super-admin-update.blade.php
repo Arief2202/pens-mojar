@@ -1,15 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.app-super-admin')
 @section('title', 'SUPER ADMIN | MOJAR APP')
 @section('content')
     <div class="container">
-        <h1 class="tittle-utama">Welcome Super Admin</h1>
-        <h5 class="card-title tittle-login">Beranda \ Daftar Dosen \ Create</h5>
+        <h1 class="tittle-utama">Perbarui Dosen</h1>
+        <h5 class="card-title tittle-login">Beranda \ Daftar Dosen \ Perbarui Dosen</h5>
         <br>
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title tittle-login">Role Dosen Modul Ajar</h5>
+                    <br>
                     <div>
                         <form>
                             <div class="mb-3">
@@ -33,7 +33,7 @@
                                 <input type="text" class="form-control" aria-descril>
                             </div>
                             <div>
-                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                <button type="submit" class="btn btn-primary">Perbarui</button>
                             </div>
                         </form>
                     </div>

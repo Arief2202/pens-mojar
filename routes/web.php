@@ -17,15 +17,19 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/super-admin', function () {
-    return view('super-admin');
+//Super Admin
+Route::get('/super-admin-create', function () {
+    return view('super-admin-create');
 });
 
-Route::get('/update-super-admin', function () {
-    return view('update-super-admin');
+Route::get('/super-admin-kelola-akun', function () {
+    return view('super-admin-kelola-akun');
+});
+
+Route::get('/super-admin-update', function () {
+    return view('super-admin-update');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-

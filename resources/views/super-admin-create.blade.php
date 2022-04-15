@@ -1,14 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.app-super-admin')
 @section('title', 'SUPER ADMIN | MOJAR APP')
 @section('content')
     <div class="container">
-        <h1 class="tittle-utama">Welcome Super Admin</h1>
+        <h1 class="tittle-utama">Tambah Akun</h1>
+        <h5 class="card-title tittle-login">Beranda \ <a href="/super-admin-kelola-akun">Kelola Akun</a> \ Tambah Akun</h5>
         <br>
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title tittle-login">Update Role Dosen Modul Ajar</h5>
+                    <br>
                     <div>
                         <form>
                             <div class="mb-3">
