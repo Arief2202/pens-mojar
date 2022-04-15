@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/super-admin', function () {
+    return view('super-admin');
+});
 
 Auth::routes();
 

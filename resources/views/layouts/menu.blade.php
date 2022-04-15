@@ -5,4 +5,7 @@
     <a class="c-sidebar-nav-link c-active" href="#">
         <i class="c-sidebar-nav-icon cil-user"></i>Test Aja
     </a>
+    <a class="c-sidebar-nav-link c-active" href="/super-admin">
+        <i class="c-sidebar-nav-icon cil-user"></i>Super Admin
+    </a>
 </li>
