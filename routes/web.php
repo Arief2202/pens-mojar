@@ -21,6 +21,10 @@ Route::get('/super-admin', function () {
     return view('super-admin');
 });
 
+Route::get('/update-super-admin', function () {
+    return view('update-super-admin');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

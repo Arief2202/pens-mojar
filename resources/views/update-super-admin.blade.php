@@ -3,13 +3,12 @@
 @section('content')
     <div class="container">
         <h1 class="tittle-utama">Welcome Super Admin</h1>
-        <h5 class="card-title tittle-login">Beranda \ Daftar Dosen \ Create</h5>
         <br>
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title tittle-login">Role Dosen Modul Ajar</h5>
+                    <h5 class="card-title tittle-login">Update Role Dosen Modul Ajar</h5>
                     <div>
                         <form>
                             <div class="mb-3">
