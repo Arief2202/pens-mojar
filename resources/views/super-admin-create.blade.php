@@ -30,7 +30,12 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Role</label>
-                                <input type="text" class="form-control" aria-descril>
+                                <select class="form-control form-select" id="inputGroupSelect01">
+                                    <option selected>  </option>
+                                    <option value="1">Isi Rolenya</option>
+                                    <option value="2">Isi Rolenya</option>
+                                    <option value="3">Isi Rolenya</option>
+                                </select>
                             </div>
                             <div>
                                 <button type="submit" class="btn btn-primary">Simpan</button>
