@@ -30,6 +30,11 @@ Route::get('/super-admin-update', function () {
     return view('super-admin-update');
 });
 
+Route::get('/super-admin-daftar-dosen', function () {
+    return view('super-admin-daftar-dosen');
+});
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
