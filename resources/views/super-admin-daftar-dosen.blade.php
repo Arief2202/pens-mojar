@@ -30,8 +30,8 @@
       <td>Otto</td>
       <td>@mdo</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Primary</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Danger</button></td>
+      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
+      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
   
     </tr>
     <tr>
@@ -40,8 +40,8 @@
       <td>Thornton</td>
       <td>@fat</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Primary</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Danger</button></td>
+      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
+      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
     </tr>
     <tr>
     <tr>
@@ -50,16 +50,16 @@
       <td>Thornton</td>
       <td>@fat</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Primary</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Danger</button></td>
+      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
+      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td colspan="2">Larry the Bird</td>
       <td>@twitter</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Primary</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Danger</button></td>
+      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
+      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
     </tr>
   </tbody>
 </table>
