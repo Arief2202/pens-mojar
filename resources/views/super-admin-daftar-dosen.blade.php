@@ -3,12 +3,16 @@
 @section('content')
     <div class="container">
         <h1 class="tittle-utama">Daftar Dosen</h1>
-        <h5 class="card-title tittle-login">Beranda \ <a href="/super-admin-kelola-akun">Daftar Dosen</a></h5>
+        <h5 class="card-title tittle-login">Beranda \ Daftar Dosen</h5>
         <br>
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
+                  <br>
+                    <div>
+                        <a href="/super-admin-kelola-akun"><button class="btn btn-primary">Kelola Akun</button></a>
+                    </div>
                     <br>
                     <div>
                     <table class="table">
@@ -19,8 +23,6 @@
       <th scope="col">Nama</th>
       <th scope="col">Email</th>
       <th scope="col">Role</th>
-      <th scope="col">Status</th>
-      <th scope="col">Aksi</th>
     </tr>
   </thead>
   <tbody>
@@ -30,8 +32,6 @@
       <td>Otto</td>
       <td>@mdo</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
   
     </tr>
     <tr>
@@ -40,8 +40,6 @@
       <td>Thornton</td>
       <td>@fat</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
     </tr>
     <tr>
     <tr>
@@ -50,16 +48,12 @@
       <td>Thornton</td>
       <td>@fat</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td colspan="2">Larry the Bird</td>
       <td>@twitter</td>
       <td>IT</td>
-      <td><button class="btn btn-outline-primary" type="button">Update</button></td>
-      <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
     </tr>
   </tbody>
 </table>
