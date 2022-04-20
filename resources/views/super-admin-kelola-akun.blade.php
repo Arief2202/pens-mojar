@@ -23,21 +23,23 @@
         <th scope="col">Nama</th>
         <th scope="col">Email</th>
         <th scope="col">Role</th>
-        <th scope="col">Status</th>
+        {{-- <th scope="col">Status</th> --}}
         <th scope="col">Aksi</th>
     </tr>
     </thead>
 <tbody>
+    @foreach ($data_akun as $akun)
     <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>IT</td>
-        <td><button class="btn btn-outline-primary" type="button">Update</button></td>
-        <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
+        <th scope="row">{{$akun->id_akun}}</th>
+        <td>{{$akun->nidn}}</td>
+        <td>{{$akun->nama}}</td>
+        <td>{{$akun->email}}</td>
+        <td>{{$akun->role}}</td>
+        <td><button class="btn btn-outline-primary" type="button">Update</button>
+            <button class="btn btn-outline-danger" type="button">Delete</button></td>
     </tr>
-    <tr>
+    @endforeach
+    {{-- <tr>
         <th scope="row">2</th>
         <td>Jacob</td>
         <td>Thornton</td>
@@ -63,7 +65,7 @@
         <td>IT</td>
         <td><button class="btn btn-outline-primary" type="button">Update</button></td>
         <td><button class="btn btn-outline-danger" type="button">Delete</button></td>
-    </tr>
+    </tr> --}}
 </tbody>
 </table>
                     </div>
