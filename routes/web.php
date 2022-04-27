@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AccountDosenController;
+use App\Http\Controllers\DosenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +23,9 @@ Route::get('/super-admin-create', function () {
     return view('super-admin-create');
 });
 
-// Route::get('/super-admin-kelola-akun', function () {
-//     return view('super-admin-kelola-akun');
-// });
+Route::get('/super-admin-kelola-akun', function () {
+    return view('super-admin-kelola-akun');
+});
 
 Route::get('/super-admin-update', function () {
     return view('super-admin-update');
@@ -40,4 +40,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/super-admin-kelola-akun', [AccountDosenController::class, 'index']);
+// Route::get('/super-admin-kelola-akun', [AccountDosenController::class, 'index']);
+Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);

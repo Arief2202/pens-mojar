@@ -8,53 +8,43 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-body p-5">
+                    <div class="card-body px-5">
                         <br>
                         <div>
-                            <a href="/super-admin-kelola-akun"><button class="btn btn-primary">Kelola Akun</button></a>
+                            <a href="/super-admin-kelola-akun"><button class="btn btn-lg btn-primary">Tambah Dosen</button></a>
                         </div>
                         <br>
                         <div>
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">N0</th>
+                                        <th scope="col">No</th>
                                         <th scope="col">NIDN</th>
                                         <th scope="col">Nama</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Role</th>
+                                        <th scope="col">Mata Kuliah</th>
+                                        <th scope="col">Prodi</th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach ($dataDosen as $dosen)
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>IT</td>
-
+                                        <th scope="row">{{$loop->iteration}}</th>
+                                        <td>{{$dosen->nidn}}</td>
+                                        <td>{{$dosen->nama}}</td>
+                                        <td>{{$dosen->id_matkul}}</td>
+                                        <td>{{$dosen->id_prodi}}</td>
+                                        <td>
+                                        <form>
+                                        <a href="/{{$dosen->id_dosen}}/edit"><button class="btn btn-primary" type="submit"><i class="bi bi-pen-fill"></i></button></a>
+                                        <form action="/{{$dosen->id_dosen}}" method="POST"><button class="btn btn-danger" type="submit"><i class="bi bi-trash-fill"></i></button>
+                                            @method('DELETE')
+                                            @csrf
+                                        </form>
+                                        </form>
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>IT</td>
-                                    </tr>
-                                    <tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>IT</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>IT</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
