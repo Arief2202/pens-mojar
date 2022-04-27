@@ -33,7 +33,7 @@
                                         <td>{{$dosen->nidn}}</td>
                                         <td>{{$dosen->nama}}</td>
                                         <td>{{$dosen->id_matkul}}</td>
-                                        <td>{{$dosen->id_prodi}}</td>
+                                        <td>{{$dosen->prodi->nama}}</td>
                                         <td>
                                         <form>
                                         <a href="/{{$dosen->id_dosen}}/edit"><button class="btn btn-primary" type="submit"><i class="bi bi-pen-fill"></i></button></a>
