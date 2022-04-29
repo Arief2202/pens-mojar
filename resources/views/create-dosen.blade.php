@@ -24,7 +24,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Program Studi</label>
-                                        <input type="text" class="form-control" name="id_prodi" placeholder="ini isien angka 1-2 ya rek wkwk">
+                                        <input type="text" class="form-control" name="id_prodi" placeholder="ini isien angka bebas, tapi kamu harus ngeset id juga di tabel prodi">
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Mata Kuliah</label>
