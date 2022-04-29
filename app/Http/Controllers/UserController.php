@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function Read()
+    public function index()
     {
         $data = User::all();
         return view('super-admin-kelola-akun', compact(['data']));

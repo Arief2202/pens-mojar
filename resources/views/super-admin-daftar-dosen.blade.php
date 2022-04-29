@@ -11,7 +11,7 @@
                     <div class="card-body px-5">
                         <br>
                         <div>
-                            <a href="/super-admin-kelola-akun"><button class="btn btn-lg btn-primary">Tambah Dosen</button></a>
+                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary">Tambah Dosen</button></a>
                         </div>
                         <br>
                         <div>
@@ -28,26 +28,30 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($dataDosen as $dosen)
-                                    <tr>
-                                        <th scope="row">{{$loop->iteration}}</th>
-                                        <td>{{$dosen->nidn}}</td>
-                                        <td>{{$dosen->nama}}</td>
-                                        <td>{{$dosen->id_matkul}}</td>
-                                        <td>{{$dosen->prodi->nama}}</td>
-                                        <td>
-                                        <form>
-                                        <a href="/{{$dosen->id_dosen}}/edit"><button class="btn btn-primary" type="submit"><i class="bi bi-pen-fill"></i></button></a>
-                                        <form action="/{{$dosen->id_dosen}}" method="POST"><button class="btn btn-danger" type="submit"><i class="bi bi-trash-fill"></i></button>
-                                            @method('DELETE')
-                                            @csrf
-                                        </form>
-                                        </form>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <th scope="row">{{ $loop->iteration }}</th>
+                                            <td>{{ $dosen->nidn }}</td>
+                                            <td>{{ $dosen->nama }}</td>
+                                            <td>{{ $dosen->id_matkul }}</td>
+                                            <td>{{ $dosen->prodi->nama }}</td>
+                                            <td>
+                                                <form>
+                                                    <a href="/{{ $dosen->id_dosen }}/edit"><button class="btn btn-primary"
+                                                            type="submit"><i class="bi bi-pen-fill"></i></button></a>
+                                                    <form action="/{{ $dosen->id_dosen }}" method="POST"><button
+                                                            class="btn btn-danger" type="submit"><i
+                                                                class="bi bi-trash-fill"></i></button>
+                                                        @method('DELETE')
+                                                        @csrf
+                                                    </form>
+                                                </form>
+                                            </td>
+                                        </tr>
                                     @endforeach
                                 </tbody>
                             </table>
                         </div>
+                        {{ $dataDosen->links() }}
                     </div>
                 </div>
             </div>
