@@ -24,11 +24,11 @@
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Program Studi</label>
-                                        <input type="text" class="form-control" name="id_prodi">
+                                        <input type="text" class="form-control" name="id_prodi" placeholder="ini isien angka 1-2 ya rek wkwk">
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Mata Kuliah</label>
-                                        <input type="text" class="form-control" name="id_matkul">
+                                        <input type="text" class="form-control" name="id_matkul" placeholder="Kalau ini isi angka biasa, belum tak relasikan">
                                     </div>
                                     <br>
                                     <input class="btn btn-success btn-lg" type="submit" value="save">
