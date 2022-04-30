@@ -23,8 +23,13 @@
                                         <input type="text" class="form-control" name="nama">
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Program Studi</label>
-                                        <input type="text" class="form-control" name="id_prodi" placeholder="ini isien angka bebas, tapi kamu harus ngeset id juga di tabel prodi">
+                                        <label class="form-label">Program Studi</label><br>
+                                        <select class="form-select" name="id_prodi" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            @foreach ($prodi as $item)
+                                            <option value="{{$item->id_prodi}}">{{$item->nama}}</option>
+                                            @endforeach
+                                          </select>
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Mata Kuliah</label>
