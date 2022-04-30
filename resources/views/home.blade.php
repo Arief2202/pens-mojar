@@ -61,7 +61,7 @@
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
-                                    <th scope="col">Data Sains</th>
+                                    <th scope="col">Teknik Elektronika</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -85,7 +85,7 @@
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title ">
-                                    <th scope="col">Teknik Informatika</th>
+                                    <th scope="col">Teknik Telekomunikasi</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -109,7 +109,7 @@
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
-                                    <th scope="col">Teknik Komputer</th>
+                                    <th scope="col">Teknik Elektro Industri</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -133,7 +133,7 @@
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
-                                    <th scope="col">Data Sains</th>
+                                    <th scope="col">Teknik Mekatronika</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -157,7 +157,7 @@
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title ">
-                                    <th scope="col">Teknik Informatika</th>
+                                    <th scope="col">Sistem Pembangkit Energi</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -181,7 +181,7 @@
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
-                                    <th scope="col">Teknik Komputer</th>
+                                    <th scope="col">Teknologi Game</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -205,7 +205,7 @@
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
-                                    <th scope="col">Data Sains</th>
+                                    <th scope="col">Teknologi Multimedia Dan Broadcasting</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -229,7 +229,7 @@
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title ">
-                                    <th scope="col">Teknik Informatika</th>
+                                    <th scope="col">Teknologi Rekayasa Internet</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -253,7 +253,7 @@
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
-                                    <th scope="col">Teknik Komputer</th>
+                                    <th scope="col">Teknologi Rekayasa Multimedia</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -277,7 +277,7 @@
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
-                                    <th scope="col">Data Sains</th>
+                                    <th scope="col">Sains Data Terapan</th>
                                 </div>
                             </div>
                             <div class="card-body row text-center">
@@ -297,7 +297,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
