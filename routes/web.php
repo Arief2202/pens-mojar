@@ -36,6 +36,12 @@ Route::get('/super-admin-daftar-dosen', function () {
     return view('super-admin-daftar-dosen');
 });
 
+//LoginUP2Ai
+
+Route::get('/detail-d3IT', function () {
+    return view('detail-d3IT');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
