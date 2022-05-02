@@ -18855,6 +18855,9 @@ h3 {
   margin-top: var(--cui-gutter-y);
 }
 
+.card-header{
+  width: 100%;
+}
 /* Card */
 /* .tittle-utama{
   font-size: 40 px;
