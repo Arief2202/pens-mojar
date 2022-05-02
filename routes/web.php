@@ -38,8 +38,8 @@ Route::get('/super-admin-daftar-dosen', function () {
 
 //LoginUP2Ai
 
-Route::get('/detail-d3IT', function () {
-    return view('detail-d3IT');
+Route::get('/detail-d3it', function () {
+    return view('detail-d3it');
 });
 
 Auth::routes();
@@ -49,8 +49,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Fitur Kelola Akun
 Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);
+Route::delete('/super-admin-kelola-akun/{id}',[UserController::class, 'destroy']);
 
 // Fitur Daftar Dosen
 Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
 Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
 Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
+// Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
+// Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
+Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy']);

@@ -13,4 +13,12 @@ class UserController extends Controller
         return view('super-admin-kelola-akun', compact(['data']));
     }
     
+    public function destroy($id)
+    {
+        $data = User::find($id);
+        $data->delete();
+        return redirect('/super-admin-kelola-akun')->with('success', 
+        'Data telah dihapus.');
+
+    }
 }

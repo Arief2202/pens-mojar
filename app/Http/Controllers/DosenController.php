@@ -26,24 +26,25 @@ class DosenController extends Controller
         return redirect('super-admin-daftar-dosen');
     }
 
-    public function edit($id)
-    {
-        $dataDosen = Dosen::find($id);
-        return view('places.edit', compact(['place']));
-    }
+    // public function edit($id)
+    // {
+    //     $dataDosen = Dosen::find($id);
+    //     return view('edit-dosen', compact(['dataDosen']));
+    // }
 
-    public function update(Request $request, $id)
-    {
-        $dataDosen = Dosen::find($id);
-        $dataDosen->update($request->all());
-        return redirect('/');
-    }
+    // public function update(Request $request, $id)
+    // {
+    //     $dataDosen = Dosen::find($id);
+    //     $dataDosen->update($request->all());
+    //     return redirect('/super-admin-daftar-dosen');
+    // }
 
     public function destroy($id)
     {
         $dataDosen = Dosen::find($id);
+        // \App\Models\Dosen::where('id_dosen', $id)->delete();
         $dataDosen->delete();
-        return redirect('/')->with('success', 
+        return redirect('/super-admin-daftar-dosen/{id}')->with('success', 
         'Data telah dihapus.');
 
     }

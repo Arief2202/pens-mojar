@@ -35,7 +35,12 @@
                                             <td>{{ $akun->email }}</td>
                                             <td>{{ $akun->role->nama_role }}</td>
                                             <td><button class="btn btn-outline-primary" type="button">Update</button>
-                                                <button class="btn btn-outline-danger" type="button">Delete</button>
+                                                {{-- <button class="btn btn-outline-danger" type="button">Delete</button> --}}
+                                                <form action="/super-admin-kelola-akun/{{ $akun->id }}" method="POST"><button class="btn btn-danger" type="submit">
+                                                    <i class="bi bi-trash-fill"></i></button>
+                                                    @method('DELETE')
+                                                    @csrf
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach
