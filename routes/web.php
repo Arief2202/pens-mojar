@@ -38,8 +38,8 @@ Route::get('/super-admin-daftar-dosen', function () {
 
 //LoginUP2Ai
 
-Route::get('/detail-d3IT', function () {
-    return view('detail-d3IT');
+Route::get('/detail-d3it', function () {
+    return view('detail-d3it');
 });
 
 Auth::routes();
