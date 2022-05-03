@@ -2,10 +2,13 @@
     <a class="c-sidebar-nav-link c-active" href="{{ route('home') }}">
         <i class="c-sidebar-nav-icon cil-home"></i>Home
     </a>
-    <a class="c-sidebar-nav-link c-active" href="#">
-        <i class="c-sidebar-nav-icon cil-user"></i>Test Aja
+    <a class="c-sidebar-nav-link c-active" href="/super-admin-kelola-akun">
+        <i class="c-sidebar-nav-icon cil-people"></i>Super Admin
     </a>
-    <a class="c-sidebar-nav-link c-active" href="/super-admin">
-        <i class="c-sidebar-nav-icon cil-user"></i>Super Admin
+    <a class="c-sidebar-nav-link c-active" href="/riwayat">
+        <i class="c-sidebar-nav-icon cil-history"></i>Riwayat Pengadaan Modul
+    </a>
+    <a class="c-sidebar-nav-link c-active" href="/pengadaan-modul">
+        <i class="c-sidebar-nav-icon cil-book"></i>Pengadaan Modul
     </a>
 </li>

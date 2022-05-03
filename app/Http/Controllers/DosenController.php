@@ -39,12 +39,11 @@ class DosenController extends Controller
     //     return redirect('/super-admin-daftar-dosen');
     // }
 
-    public function destroy($id)
+    public function destroy(Dosen $dataDosen)
     {
-        $dataDosen = Dosen::find($id);
-        // \App\Models\Dosen::where('id_dosen', $id)->delete();
-        $dataDosen->delete();
-        return redirect('/super-admin-daftar-dosen/{id}')->with('success', 
+        Dosen::destroy($dataDosen->id);
+        // $dataDosen->delete();
+        return redirect('/super-admin-daftar-dosen')->with('success', 
         'Data telah dihapus.');
 
     }

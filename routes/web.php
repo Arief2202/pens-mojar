@@ -32,6 +32,13 @@ Route::get('/super-admin-update', function () {
     return view('super-admin-update');
 });
 
+Route::get('/riwayat', function () {
+    return view('riwayat-pengadaan-modul');
+});
+Route::get('/pengadaan-modul', function () {
+    return view('create-pengadaan-modul');
+});
+
 Route::get('/super-admin-daftar-dosen', function () {
     return view('super-admin-daftar-dosen');
 });
