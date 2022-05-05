@@ -66,7 +66,7 @@
                                 <td>Matematika</td>
                                 <td>Teori</td>
                                 <td><h4><span class="badge bg-warning">Approved by UP2AI</span></h4></td>
-                                <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                <td><a class="btn btn-outline-primary" href="/detail-Matkul" role="button">Detail</a></td>
                               </tr>
                               <tr>
                                 <th scope="row">1</th>
@@ -74,7 +74,7 @@
                                 <td>Matematika</td>
                                 <td>Teori</td>
                                 <td><h4><span class="badge bg-success">Finish</span></h4></td>
-                                <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                <td><a class="btn btn-outline-primary" href="/detail-Matkul" role="button">Detail</a></td>
                               </tr>
                               <tr>
                                 <th scope="row">1</th>
@@ -82,7 +82,7 @@
                                 <td>Matematika</td>
                                 <td>Teori</td>
                                 <td><h4><span class="badge bg-danger">Unapproved</span></h4></td>
-                                <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                <td><a class="btn btn-outline-primary" href="/detail-Matkul" role="button">Detail</a></td>
                               </tr>
                             </tbody>
                           </table>
