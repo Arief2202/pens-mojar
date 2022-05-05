@@ -70,3 +70,8 @@ Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
 // Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
 // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
 Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy']);
+
+// Fitur Update Deadline
+Route::get('/update-timeline', function () {
+    return view('update-timeline');
+});
