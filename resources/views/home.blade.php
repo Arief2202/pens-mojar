@@ -245,11 +245,13 @@
                         </div>
 
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <a href="/detail-d3internet"><button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title ">
-                                    <th scope="col">Teknologi Rekayasa Internet</th>
-                                </div>
-                            </button>
+                            <a href="/detail-d3internet">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title ">
+                                        <th scope="col">Teknologi Rekayasa Internet</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
