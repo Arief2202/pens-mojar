@@ -67,12 +67,10 @@ Route::delete('/super-admin-kelola-akun/{id}',[UserController::class, 'destroy']
 Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
 Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
 Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
-<<<<<<< HEAD
 
 Route::get('/detail-Matkul', function () {
     return view('detail-Matkul');
 });
-=======
 // Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
 // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
 Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy']);
@@ -81,4 +79,3 @@ Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy
 Route::get('/update-timeline', function () {
     return view('update-timeline');
 });
->>>>>>> 7f2fa9bad6f350f634dc678285106a462d9f4607
