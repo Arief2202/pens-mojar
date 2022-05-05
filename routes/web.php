@@ -54,3 +54,7 @@ Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);
 Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
 Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
 Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
+
+Route::get('/detail-Matkul', function () {
+    return view('detail-Matkul');
+});

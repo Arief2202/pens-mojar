@@ -11,7 +11,7 @@
                     <div class="card-body px-5">
                         <br>
                         <div>
-                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary">Tambah Dosen</button></a>
+                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary" id="btn-sa">Tambah Dosen</button></a>
                         </div>
                         <br>
                         <div>

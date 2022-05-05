@@ -36,7 +36,7 @@
                                         <input type="text" class="form-control" name="id_matkul" placeholder="Kalau ini isi angka biasa, belum tak relasikan">
                                     </div>
                                     <br>
-                                    <input class="btn btn-success btn-lg" type="submit" value="save">
+                                    <input id="btn-sa" class="btn btn-success btn-lg" type="submit" value="save">
                                 </div>
                             </form>
                         </div>
