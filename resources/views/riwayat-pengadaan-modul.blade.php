@@ -1,59 +1,103 @@
-@extends('layouts.app-super-admin')
+@extends('layouts.app')
 @section('title', 'SUPER ADMIN | MOJAR APP')
 @section('content')
-    <div class="container">
-        <h1 class="tittle-utama">Daftar Dosen</h1>
-        <h5 class="card-title tittle-login">Beranda \ Daftar Dosen</h5>
-        <br>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                    <div class="card-body px-5">
-                        <br>
-                        <div>
-                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary">Tambah Dosen</button></a>
+<div class="container">
+    <h1 class="tittle-utama">Riwayat Pengadaan D3 Teknik Informatika</h1>
+    <br>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                class="v-label v-label--active theme--light primary--text" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Tahun Pengadaan
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">2019</a>
+                                <a class="dropdown-item" href="#">2020</a>
+                                <a class="dropdown-item" href="#">2021</a>
+                                <a class="dropdown-item" href="#">2022</a>
+                            </div>
                         </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Semester
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Semester 1</a>
+                                <a class="dropdown-item" href="#">Semester 2</a>
+                                <a class="dropdown-item" href="#">Semester 3</a>
+                                <a class="dropdown-item" href="#">Semester 4</a>
+                                <a class="dropdown-item" href="#">Semester 5</a>
+                                <a class="dropdown-item" href="#">Semester 6</a>
+                                <a class="dropdown-item" href="#">Semester 7</a>
+                                <a class="dropdown-item" href="#">Semester 8</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Jenjang
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">D3</a>
+                                <a class="dropdown-item" href="#">D4</a>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
                         <br>
                         <div>
                             <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">NIDN</th>
-                                        <th scope="col">Nama</th>
+                                        <th scope="col">Kode Mata Kuliah</th>
                                         <th scope="col">Mata Kuliah</th>
-                                        <th scope="col">Prodi</th>
-                                        <th scope="col">Action</th>
+                                        <th scope="col">Jenis Modul</th>
+                                        <th scope="col">Kuota</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($dataDosen as $dosen)
-                                        <tr>
-                                            <th scope="row">{{ $loop->iteration }}</th>
-                                            <td>{{ $dosen->nidn }}</td>
-                                            <td>{{ $dosen->nama }}</td>
-                                            <td>{{ $dosen->id_matkul }}</td>
-                                            <td>{{ $dosen->prodi->nama }}</td>
-                                            <td>
-                                                <form>
-                                                    <a href="/{{ $dosen->id }}/edit"><button class="btn btn-primary"
-                                                            type="submit"><i class="bi bi-pen-fill"></i></button></a>
-                                                    <form action="/super-admin-daftar-dosen/{{ $dosen->id }}" method="POST"><button class="btn btn-danger" type="submit">
-                                                        <i class="bi bi-trash-fill"></i></button>
-                                                        @method('DELETE')
-                                                        @csrf
-                                                    </form>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                    @endforeach
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>1233456</td>
+                                        <td>Matematika</td>
+                                        <td>Teori</td>
+                                        <td>5</td>
+                                        <td>
+                                            <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
+                                        </td>
+                                        <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>1233456</td>
+                                        <td>Matematika</td>
+                                        <td>Teori</td>
+                                        <td>5</td>
+                                        <td>
+                                            <h5><span class="badge p-2 alert-success">Finish</span></h5>
+                                        </td>
+                                        <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>1233456</td>
+                                        <td>Matematika</td>
+                                        <td>Teori</td>
+                                        <td>5</td>
+                                        <td>
+                                            <h5><span class="badge p-2 alert-danger">Unapproved</span></h5>
+                                        </td>
+                                        <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                    </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        {{ $dataDosen->links() }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection

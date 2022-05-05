@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TimelineController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,9 +42,9 @@ Route::get('/pengadaan-modul', function () {
     return view('create-pengadaan-modul');
 });
 
-Route::get('/timeline', function () {
-    return view('timeline');
-});
+// Route::get('/timeline', function () {
+//     return view('timeline');
+// });
 
 Route::get('/super-admin-daftar-dosen', function () {
     return view('super-admin-daftar-dosen');
@@ -70,3 +72,9 @@ Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
 // Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
 // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
 Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy']);
+
+// Fitur Timeline
+Route::get('/timeline', [TimelineController::class, 'index']);
+Route::get('/create-timeline', [TimelineController::class, 'create']);
+Route::post('/timeline', [TimelineController::class, 'insert']);
+

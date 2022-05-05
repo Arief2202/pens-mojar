@@ -13,20 +13,30 @@
                         <div>
                             <form>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">NIDN</label>
-                                    <input type="text" class="form-control" aria-descril>
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-control" name="nama">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Nama</label>
-                                    <input type="text" class="form-control" aria-descril>
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-control" name="nama">
                                 </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label class="form-group">Nama</label>
+                                            <input type="date" class="form-control" name="nama">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label class="form-group">Nama</label>
+                                            <input type="date" class="form-control" name="nama">
+                                        </div>
+                                    </div>
+                                  </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                                    <input type="text" class="form-control" aria-descril>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Password</label>
-                                    <input type="text" class="form-control" aria-descril>
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-control" name="nama">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Role</label>

@@ -6,25 +6,16 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="card-title">Timeline</h6>
+                            {{-- <h6 class="card-title">Timeline</h6> --}}
+                            <a href="/create-timeline"><button class="btn btn-primary">Set Timeline</button></a>
                             <div id="content">
                                 <ul class="timeline">
-                                    <li class="event" data-date="12:30 - 1:00pm">
-                                        <h3>Registration</h3>
-                                        <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
-                                    </li>
-                                    <li class="event" data-date="2:30 - 4:00pm">
-                                        <h3>Opening Ceremony</h3>
-                                        <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
-                                    </li>
-                                    <li class="event" data-date="5:00 - 8:00pm">
-                                        <h3>Main Event</h3>
-                                        <p>This is where it all goes down. You will compete head to head with your friends and rivals. Get ready!</p>
-                                    </li>
-                                    <li class="event" data-date="8:30 - 9:30pm">
-                                        <h3>Closing Ceremony</h3>
-                                        <p>See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.</p>
-                                    </li>
+                                    @foreach ($dataTimeline as $item)
+                                    <li class="event" data-date="{{ date('d F', strtotime($item->tgl_awal)) }} - {{ date('d F', strtotime($item->tgl_akhir)) }}">
+                                        <h3>{{$item->judul}}</h3>
+                                        <p>{{$item->deskripsi}}</p>
+                                    </li> 
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
