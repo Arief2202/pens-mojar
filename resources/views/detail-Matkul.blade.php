@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body" id="line-card">
                                     <table class="table">
                                         <tbody>
                                         <br>
@@ -49,7 +49,7 @@
                         <div class="vl"></div>
                         <div class="col-sm-6">
                             <div class="card">
-                                <div class="card-body">
+                                <div class="card-body" id="line-card">
                                     <table class="table">
                                         <tbody>
                                         <br>

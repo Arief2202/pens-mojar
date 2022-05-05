@@ -110,3 +110,8 @@ th{
 #garis{
   border-style:hidden;
 }
+
+#line-card{
+  border: 1px solid #DFE0EB;
+  border-radius: 5px;
+}
