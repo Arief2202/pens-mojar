@@ -7,7 +7,8 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body px-5">
+                  <br>
                 <div class="container-fluid">
                     <div class="btn-group">
                         <button type="button" class="btn btn-outline-primary dropdown-toggle"class="v-label v-label--active theme--light primary--text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
