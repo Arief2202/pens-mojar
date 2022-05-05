@@ -11,11 +11,13 @@
                 <div class="card-body px-5">
                     <div class="card-columns">
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title ">
+                            <a href="/detail-d3it">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                <div class="title">
                                     <th scope="col">Teknik Informatika</th>
                                 </div>
-                            </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -35,11 +37,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                            <a href="/detail-d3tekkom">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
                                     <th scope="col">Teknik Komputer</th>
                                 </div>
-                            </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -59,11 +63,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                            <a href="/detail-d3elektro">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
                                     <th scope="col">Teknik Elektronika</th>
                                 </div>
-                            </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -83,11 +89,13 @@
                         </div>
 
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title ">
-                                    <th scope="col">Teknik Telekomunikasi</th>
-                                </div>
-                            </div>
+                            <a href="#">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title ">
+                                        <th scope="col">Teknik Telekomunikasi</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -107,11 +115,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title">
-                                    <th scope="col">Teknik Elektro Industri</th>
-                                </div>
-                            </div>
+                            <a href="/detail-d3elin">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title">
+                                        <th scope="col">Teknik Elektro Industri</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -131,11 +141,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title">
-                                    <th scope="col">Teknik Mekatronika</th>
-                                </div>
-                            </div>
+                            <a href="/detail-d3meka">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title">
+                                        <th scope="col">Teknik Mekatronika</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -155,11 +167,13 @@
                         </div>
 
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                            <a href="#">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title ">
                                     <th scope="col">Sistem Pembangkit Energi</th>
                                 </div>
-                            </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -179,11 +193,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title">
-                                    <th scope="col">Teknologi Game</th>
-                                </div>
-                            </div>
+                            <a href="#">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title">
+                                        <th scope="col">Teknologi Game</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -203,11 +219,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                            <a href="/detail-d3mmb">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
                                     <th scope="col">Teknologi Multimedia Dan Broadcasting</th>
                                 </div>
-                            </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -227,11 +245,13 @@
                         </div>
 
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title ">
-                                    <th scope="col">Teknologi Rekayasa Internet</th>
-                                </div>
-                            </div>
+                            <a href="/detail-d3internet">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title ">
+                                        <th scope="col">Teknologi Rekayasa Internet</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -251,11 +271,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title">
-                                    <th scope="col">Teknologi Rekayasa Multimedia</th>
-                                </div>
-                            </div>
+                            <a href="#">    
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title">
+                                        <th scope="col">Teknologi Rekayasa Multimedia</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>
@@ -275,11 +297,13 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <div class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title">
-                                    <th scope="col">Sains Data Terapan</th>
-                                </div>
-                            </div>
+                            <a href="#">
+                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title">
+                                        <th scope="col">Sains Data Terapan</th>
+                                    </div>
+                                </button>
+                            </a>
                             <div class="card-body row text-center">
                                 <div class="col">
                                     <div class="fs-5 fw-semibold">12</div>

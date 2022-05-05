@@ -36,11 +36,10 @@
                                             <td>{{ $dosen->prodi->nama }}</td>
                                             <td>
                                                 <form>
-                                                    <a href="/{{ $dosen->id_dosen }}/edit"><button class="btn btn-primary"
+                                                    <a href="/{{ $dosen->id }}/edit"><button class="btn btn-primary"
                                                             type="submit"><i class="bi bi-pen-fill"></i></button></a>
-                                                    <form action="/{{ $dosen->id_dosen }}" method="POST"><button
-                                                            class="btn btn-danger" type="submit"><i
-                                                                class="bi bi-trash-fill"></i></button>
+                                                    <form action="/super-admin-daftar-dosen/{{ $dosen->id }}" method="POST"><button class="btn btn-danger" type="submit">
+                                                        <i class="bi bi-trash-fill"></i></button>
                                                         @method('DELETE')
                                                         @csrf
                                                     </form>

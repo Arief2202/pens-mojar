@@ -7,8 +7,13 @@
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <!-- CoreUI CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{ url('css/super-admin.css') }}" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url('css/app.css') }}" crossorigin="anonymous">
+=======
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/customstyle.css" crossorigin="anonymous">
+>>>>>>> 7f2fa9bad6f350f634dc678285106a462d9f4607
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
           integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
