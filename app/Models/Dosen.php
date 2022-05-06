@@ -21,5 +21,8 @@ class Dosen extends Model
         return $this->belongsTo(Matkul::class, 'id_matkul', 'id_matkul');
     }
 
-
+    public function pengadaan()
+    {
+        return $this->hasMany(Pengadaan::class);
+    }
 }

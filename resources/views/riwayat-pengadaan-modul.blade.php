@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <h1 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h1>
-    <br>
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="container-fluid">
-                        {{-- <div class="btn-group">
+    <div class="container">
+        <h1 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h1>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card p-2">
+                    <div class="card-body">
+                        <div class="btn-group">
                             <button type="button" class="btn btn-outline-primary dropdown-toggle"
                                 class="v-label v-label--active theme--light primary--text" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -50,7 +49,6 @@
                         </div>
                         <br>
                         <br>
-                        <br> --}}
                         <div>
                             <table class="table">
                                 <thead>
@@ -65,39 +63,48 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>1233456</td>
-                                        <td>Matematika</td>
-                                        <td>Teori</td>
-                                        <td>5</td>
-                                        <td>
-                                            <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
-                                        </td>
-                                        <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>1233456</td>
-                                        <td>Matematika</td>
-                                        <td>Teori</td>
-                                        <td>5</td>
-                                        <td>
-                                            <h5><span class="badge p-2 alert-success">Finish</span></h5>
-                                        </td>
-                                        <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>1233456</td>
-                                        <td>Matematika</td>
-                                        <td>Teori</td>
-                                        <td>5</td>
-                                        <td>
-                                            <h5><span class="badge p-2 alert-danger">Unapproved</span></h5>
-                                        </td>
-                                        <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
-                                    </tr>
+                                    @foreach ($dataPengadaan as $item)
+                                        <tr>
+                                            <th scope="row">{{ $loop->iteration }}</th>
+                                            <td>{{ $item->matkul->kode_matkul }}</td>
+                                            <td>{{ $item->matkul->nama }}</td>
+                                            <td>{{ $item->modul->jenis_modul }}</td>
+                                            <td>{{ $item->kuota }}</td>
+                                            <td>
+                                                <h5><span class="badge p-2 alert-danger">Unapproved</span></h5>
+                                            </td>
+                                            <td><a href="/detail-matkul"><button class="btn btn-outline-primary"
+                                                type="button">Detail</button></td></a>
+                                        </tr>
+                                    @endforeach
+
+                                    {{-- <tr>
+                                            <th scope="row">1</th>
+                                            <td>1233456</td>
+                                            <td>Matematika</td>
+                                            <td>Teori</td>
+                                            <td>5</td>
+                                            <td>
+                                                <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
+                                            </td>
+                                            <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>1233456</td>
+                                            <td>Matematika</td>
+                                            <td>Teori</td>
+                                            <td>5</td>
+                                            <td>
+                                                <h5><span class="badge p-2 alert-success">Finish</span></h5>
+                                            </td>
+                                            <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                        </tr> --}}
                                 </tbody>
                             </table>
-@endsection
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endsection

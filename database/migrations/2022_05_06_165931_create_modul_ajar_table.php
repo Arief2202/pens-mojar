@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePengadaanTable extends Migration
+class CreateModulAjarTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreatePengadaanTable extends Migration
      */
     public function up()
     {
-        Schema::create('pengadaan', function (Blueprint $table) {
+        Schema::create('modul_ajar', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_matkul');
-            $table->bigInteger('id_modul');
-            $table->integer('kuota');
-            $table->bigInteger('id_dosen');
+            $table->string('jenis_modul');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreatePengadaanTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pengadaan');
+        Schema::dropIfExists('modul_ajar');
     }
 }

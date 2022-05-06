@@ -15,4 +15,9 @@ class Matkul extends Model
     {
         return $this->hasMany(Dosen::class);
     }
+
+    public function pengadaan()
+    {
+        return $this->hasMany(Pengadaan::class);
+    }
 }

@@ -22,38 +22,6 @@
                             <strong><label for="formFile" class="form-label">Buku Pedoman Pembuatan Modul Ajar</label></strong>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-
-                        {{-- preview pdf --}}
-                        <div>
-                            <br>
-                            <p> Bikin tampilan Preview PDF disini coba </p>
-
-                            <p>source pdfnya pake ini ->  images/kalender_akademik_20_21.pdf</p>
-                        </div>
-                        
-                        {{-- <div class="row">
-                            <div class="col-xl-4">
-                                <div class="card text-white bg-dark mb-3">
-                                    <h5 class="card-header text-white">Surat Keterangan Penetapan Modul Ajar
-                                        PENS</h5>
-                                    <a class="btn btn-secondary" href="#" role="button">Upload</a>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card text-white bg-dark mb-3">
-                                    <h5 class="card-header text-white">Surat Keterangan Pencairan Dana Modul
-                                        Ajar PENS</h5>
-                                    <a class="btn btn-secondary" href="#" role="button">Upload</a>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="card text-white bg-dark mb-3">
-                                    <h5 class="card-header text-white">Buku Paedoman Pembuatan Modul Ajar
-                                        PENS</h5>
-                                    <button class="btn btn-secondary" type="button">Upload</button>
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>

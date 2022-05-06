@@ -16,30 +16,30 @@
                     <br>
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="card">
-                                <div class="card-body" id="line-card">
+                            <div class="card" style="border: none;">
+                                <div class="card-body">
                                     <table class="table">
                                         <tbody>
                                         <br>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th">Mata Kuliah</th>
-                                            <td id="tittle-td">: Pemrograman Lanjut</td>
+                                            <td id="tittle-td">: Workshop Kecerdasan Buatan (AI)</td>
                                         </tr>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th">No. Kode</th>
-                                            <td id="tittle-td">: VT2041104</td>
+                                            <td id="tittle-td">: AI007</td>
                                         </tr>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th">Semester</th>
-                                            <td id="tittle-td">: 1</td>
+                                            <td id="tittle-td">: 4</td>
                                         </tr>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th">Tahun Pendanaan</th>
-                                            <td id="tittle-td">: 2021</td>
+                                            <td id="tittle-td">: 2022</td>
                                         </tr>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th">Jenis Pendanaan</th>
-                                            <td id="tittle-td">: Modul</td>
+                                            <td id="tittle-td">: Modul Pratikum</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -48,18 +48,18 @@
                         </div>
                         <div class="vl"></div>
                         <div class="col-sm-6">
-                            <div class="card">
+                            <div class="card" style="border: none;">
                                 <div class="card-body" id="line-card">
                                     <table class="table">
                                         <tbody>
                                         <br>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th" id="text-color-detail">Ketua Tim Pembuat</th>
-                                            <td id="tittle-td">: Dr. Bayu Hidayah</td>
+                                            <td id="tittle-td">: Ir. Bayu Hidayah M.Kom</td>
                                         </tr>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th" id="text-color-detail">Anggota Tim Pembuat</th>
-                                            <td id="tittle-td">: Anggota A, Anggota B, Anggota C</td>
+                                            <td id="tittle-td">: Belum di Tentukan</td>
                                         </tr>
                                         </tbody>
                                     </table>

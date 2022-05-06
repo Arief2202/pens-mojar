@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TimelineController;
+use App\Http\Controllers\PengadaanController;
 
 
 /*
@@ -35,9 +36,9 @@ Route::get('/super-admin-update', function () {
     return view('super-admin-update');
 });
 
-Route::get('/riwayat', function () {
-    return view('riwayat-pengadaan-modul');
-});
+// Route::get('/riwayat', function () {
+//     return view('riwayat-pengadaan-modul');
+// });
 
 Route::get('/pengadaan-modul', function () {
     return view('create-pengadaan-modul');
@@ -74,9 +75,6 @@ Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
 Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
 Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
 
-Route::get('/detail-Matkul', function () {
-    return view('detail-Matkul');
-});
 // Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
 // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
 Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy']);
@@ -90,3 +88,9 @@ Route::post('/timeline', [TimelineController::class, 'insert']);
 Route::get('/update-timeline', function () {
     return view('update-timeline');
 });
+
+// Fitur Pengadaan Modul Ajar
+Route::get('/riwayat', [PengadaanController::class, 'index']);
+Route::get('/detail-matkul', [PengadaanController::class, 'indexDetail']);
+Route::get('/pengadaan-modul', [PengadaanController::class, 'create']);
+Route::post('/riwayat', [PengadaanController::class, 'insert']);
