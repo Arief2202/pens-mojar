@@ -9,21 +9,27 @@
         <div>
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="card">
-                        <div class="mb-3 mx-3">
+                    <div class="card px-4">
+                        <div class="mb-3">
                             <strong><label class="mt-4" for="formFile" class="form-label">Surat Keterangan Penetapan Modul Ajar</label></strong>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-                        <div class="mb-3 mx-3">
+                        <div class="mb-3">
                             <strong><label for="formFile" class="form-label">Surat Kontrak Pendanaan Modul</label></strong>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-                        <div class="mb-3 mx-3">
+                        <div class="mb-3">
                             <strong><label for="formFile" class="form-label">Buku Pedoman Pembuatan Modul Ajar</label></strong>
                             <input class="form-control" type="file" id="formFile">
                         </div>
 
                         {{-- preview pdf --}}
+                        <div>
+                            <br>
+                            <p> Bikin tampilan Preview PDF disini coba </p>
+
+                            <p>source pdfnya pake ini ->  images/kalender_akademik_20_21.pdf</p>
+                        </div>
                         
                         {{-- <div class="row">
                             <div class="col-xl-4">
