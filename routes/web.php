@@ -43,6 +43,10 @@ Route::get('/pengadaan-modul', function () {
     return view('create-pengadaan-modul');
 });
 
+Route::get('/berkas-pengadaan', function () {
+    return view('berkas-pengadaan');
+});
+
 // Route::get('/timeline', function () {
 //     return view('timeline');
 // });
