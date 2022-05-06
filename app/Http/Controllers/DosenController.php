@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Dosen;
 use App\Models\Prodi;
+use App\Models\Matkul;
 
 class DosenController extends Controller
 {
@@ -17,7 +18,8 @@ class DosenController extends Controller
     public function create()
     {
         $prodi = Prodi::all();
-        return view('create-dosen', compact('prodi'));
+        $matkul = Matkul::all();
+        return view('create-dosen', compact('prodi', 'matkul'));
     }
 
     public function insert(Request $request)
