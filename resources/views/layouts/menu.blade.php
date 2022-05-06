@@ -12,7 +12,7 @@
         <i class="c-sidebar-nav-icon cil-book"></i>Pengadaan Modul
     </a>
     <a class="c-sidebar-nav-link c-active" href="/berkas-pengadaan">
-        <i class="c-sidebar-nav-icon cil-book"></i>Dokumen Pengadaan
+        <i class="c-sidebar-nav-icon cil-file"></i>Dokumen Pengadaan
     </a>
     <a class="c-sidebar-nav-link c-active" href="/timeline">
         <i class="c-sidebar-nav-icon cil-calendar"></i>Timeline
