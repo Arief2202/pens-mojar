@@ -3,6 +3,7 @@
 @section('content')
 <div class="container">
     <h1 class="tittle-utama">Detail Pendanaan D3 Teknik Informatika</h1>
+    <h5 class="card-title tittle-login">Beranda / Detail Pendanaan</h5>
     <br>
     <div class="row">
         <div class="col-sm-12">
