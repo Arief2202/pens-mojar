@@ -12,7 +12,7 @@
                 <div class="card-body px-5">
                     <div class="card-columns">
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <a href="/detail-d3it">
+                            <a href="/riwayat">
                                 <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
                                     <th scope="col">Teknik Informatika</th>
@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <a href="/detail-d3tekkom">
+                            <a href="/riwayat">
                                 <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
                                     <th scope="col">Teknik Komputer</th>
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <a href="/detail-d3elektro">
+                            <a href="/riwayat">
                                 <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
                                     <th scope="col">Teknik Elektronika</th>
@@ -90,7 +90,7 @@
                         </div>
 
                         <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <a href="#">
+                            <a href="/riwayat">
                                 <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                     <div class="title ">
                                         <th scope="col">Teknik Telekomunikasi</th>
@@ -116,7 +116,7 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <a href="/detail-d3elin">
+                            <a href="/riwayat">
                                 <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                     <div class="title">
                                         <th scope="col">Teknik Elektro Industri</th>
@@ -142,7 +142,7 @@
                         </div>
 
                         <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
-                            <a href="/detail-d3meka">
+                            <a href="/riwayat">
                                 <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                     <div class="title">
                                         <th scope="col">Teknik Mekatronika</th>

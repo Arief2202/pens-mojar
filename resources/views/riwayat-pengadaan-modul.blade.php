@@ -47,10 +47,10 @@
                                 <a class="dropdown-item" href="#">D3</a>
                                 <a class="dropdown-item" href="#">D4</a>
                             </div>
-                        </div> --}}
+                        </div>
                         <br>
                         <br>
-                        <br>
+                        <br> --}}
                         <div>
                             <table class="table">
                                 <thead>

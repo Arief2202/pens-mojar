@@ -13,7 +13,6 @@
                         <div class="mb-3">
                             <strong><label class="mt-4" for="formFile" class="form-label">Surat Keterangan Penetapan Modul Ajar</label></strong>
                             <input class="form-control" type="file" id="formFile">
-                            <embed type="application/pdf" src="images/kalender_akademik_20_21.pdf" width="100%" height="400"></embed>        
                         </div>
                         <div class="mb-3">
                             <strong><label for="formFile" class="form-label">Surat Kontrak Pendanaan Modul</label></strong>
