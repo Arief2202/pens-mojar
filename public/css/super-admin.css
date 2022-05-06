@@ -1,12 +1,12 @@
 /* Card */
-.tittle-utama{
+/* .tittle-utama{
   font-size: 40 px;
   font-weight: 700;
   color: #363740;
   font-family: "Poppins", sans-serif;
 }
 
-/* .tittle-utama{
+.tittle-utama{
   font-size: 40 px;
   font-weight: 700;
   color: #363740;
@@ -121,11 +121,30 @@ th{
 #line-card{
   border: 1px solid #DFE0EB;
   border-radius: 5px;
-} */
+}
 
-/* .vl {
+.vl {
   border-left: 1px solid #DFE0EB;
   height: 450px;
   position: absolute;
   left: 50%;
+}
+
+.btn-outline-primary{
+  height: 27px;
+  width: 100px;
+  border-radius: 8px !important;
+  color: #3751FF !important;
+  border-color: #3751FF !important;
+  transition: 0.3;
+}
+
+.btn-outline-primary:hover{
+  height: 27px;
+  width: 100px;
+  border-radius: 8px !important;
+  background-color: #3751FF !important;
+  color: white !important;
+  border-color: white !important;
+  transition: 0.3;
 } */
