@@ -7,9 +7,7 @@
             <div class="card">
                 <div class="card-body px-5">
                     <br>
-                    <div>
-                        <H3>Update Timeline</H3>
-                    </div>
+                    <h1 class="tittle-utama">Update Timeline</h1>
                     <br>
                     <form>
                         <div class="mb-3">

@@ -32,7 +32,7 @@
                                             <th scope="row">{{ $loop->iteration }}</th>
                                             <td>{{ $dosen->nidn }}</td>
                                             <td>{{ $dosen->nama }}</td>
-                                            <td>{{ $dosen->id_matkul }}</td>
+                                            <td>{{ $dosen->matkul->nama }}</td>
                                             <td>{{ $dosen->prodi->nama }}</td>
                                             <td>
                                                 <form>

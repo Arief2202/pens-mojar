@@ -1,9 +1,8 @@
 @extends('layouts.app')
-@section('title', 'MOJAR APP')
+@section('title', 'SUPER ADMIN | MOJAR APP')
 @section('content')
     <div class="container">
-        <h1 class="tittle-utama">Tambah Akun</h1>
-        <h5 class="card-title tittle-login">Beranda \ <a href="/super-admin-kelola-akun">Kelola Akun</a> \ Tambah Akun</h5>
+        <h1 class="tittle-utama">Ajukan Pengadaan Modul</h1>
         <br>
         <div class="row">
             <div class="col-sm-12">
@@ -13,20 +12,30 @@
                         <div>
                             <form>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">NIDN</label>
-                                    <input type="text" class="form-control" aria-descril>
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-control" name="nama">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Nama</label>
-                                    <input type="text" class="form-control" aria-descril>
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-control" name="nama">
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label class="form-group">Nama</label>
+                                            <input type="date" class="form-control" name="nama">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label class="form-group">Nama</label>
+                                            <input type="date" class="form-control" name="nama">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                                    <input type="text" class="form-control" aria-descril>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Password</label>
-                                    <input type="text" class="form-control" aria-descril>
+                                    <label class="form-label">Nama</label>
+                                    <input type="text" class="form-control" name="nama">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Role</label>
@@ -42,9 +51,4 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@endsection
+                    @endsection

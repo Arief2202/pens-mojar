@@ -7,9 +7,7 @@
             <div class="card">
                 <div class="card-body px-5">
                     <br>
-                    <div>
-                        <H3>Timeline</H3>
-                    </div>
+                    <h1 class="tittle-utama">Timeline</h1>
                     <div id="content">
                         <a href="/update-timeline"><button class="btn btn-outline-primary" type="button">Update</button></a>
                         <ul class="timeline">
@@ -48,8 +46,8 @@
                         </ul>
                     </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 @endsection

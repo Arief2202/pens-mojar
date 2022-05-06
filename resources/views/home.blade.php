@@ -2,6 +2,7 @@
 @section('title', 'SUPER ADMIN | MOJAR APP')
 @section('content')
 <div class="container">
+    @csrf
     <h1 class="tittle-utama">Dashboard UP2AI</h1>
     <h5 class="card-title tittle-login">Beranda</h5>
     <br>

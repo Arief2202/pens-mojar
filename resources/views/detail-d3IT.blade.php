@@ -3,47 +3,36 @@
 @section('content')
 <div class="container">
     <h1 class="tittle-utama">Detail Pendanaan D3 Teknik Informatika</h1>
+    <h5 class="card-title tittle-login">Beranda / Detail Pendanaan</h5>
     <br>
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
                 <div class="container-fluid">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary dropdown-toggle"class="v-label v-label--active theme--light primary--text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Tahun Pengadaan
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">2019</a>
-                          <a class="dropdown-item" href="#">2020</a>
-                          <a class="dropdown-item" href="#">2021</a>
-                          <a class="dropdown-item" href="#">2022</a>
-                        </div>
-                      </div> 
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Semester
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Semester 1</a>
-                          <a class="dropdown-item" href="#">Semester 2</a>
-                          <a class="dropdown-item" href="#">Semester 3</a>
-                          <a class="dropdown-item" href="#">Semester 4</a>
-                          <a class="dropdown-item" href="#">Semester 5</a>
-                          <a class="dropdown-item" href="#">Semester 6</a>
-                          <a class="dropdown-item" href="#">Semester 7</a>
-                          <a class="dropdown-item" href="#">Semester 8</a>
-                        </div>
-                      </div> 
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Jenjang
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">D3</a>
-                          <a class="dropdown-item" href="#">D4</a>
-                        </div>
-                      </div> 
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Tahun Pengadaan</option>
+                    <option value="1">2019</option>
+                    <option value="2">2020</option>
+                    <option value="3">2021</option>
+                    <option value="3">2022</option>
+                  </select>
+                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected>Jenjang</option>
+                        <option value="1">D3</option>
+                        <option value="2">D4</option>
+                      </select>
+                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option selected>Semester</option>
+                        <option value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="1">Semester 4</option>
+                        <option value="2">Semester 5</option>
+                        <option value="3">Semester 6</option>
+                        <option value="1">Semester 7</option>
+                        <option value="1">Semester 8</option>
+                      </select>
                       <br>
                       <br>
                       <br>
@@ -66,7 +55,7 @@
                                 <td>Matematika</td>
                                 <td>Teori</td>
                                 <td><h4><span class="badge bg-warning">Approved by UP2AI</span></h4></td>
-                                <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                <td><a class="btn btn-outline-primary" href="/detail-Matkul" role="button">Detail</a></td>
                               </tr>
                               <tr>
                                 <th scope="row">1</th>
@@ -74,7 +63,7 @@
                                 <td>Matematika</td>
                                 <td>Teori</td>
                                 <td><h4><span class="badge bg-success">Finish</span></h4></td>
-                                <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                <td><a class="btn btn-outline-primary" href="/detail-Matkul" role="button">Detail</a></td>
                               </tr>
                               <tr>
                                 <th scope="row">1</th>
@@ -82,7 +71,7 @@
                                 <td>Matematika</td>
                                 <td>Teori</td>
                                 <td><h4><span class="badge bg-danger">Unapproved</span></h4></td>
-                                <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                <td><a class="btn btn-outline-primary" href="/detail-Matkul" role="button">Detail</a></td>
                               </tr>
                             </tbody>
                           </table>

@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TimelineController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,7 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('auth.login');
@@ -40,9 +43,13 @@ Route::get('/pengadaan-modul', function () {
     return view('create-pengadaan-modul');
 });
 
-Route::get('/timeline', function () {
-    return view('timeline');
+Route::get('/berkas-pengadaan', function () {
+    return view('berkas-pengadaan');
 });
+
+// Route::get('/timeline', function () {
+//     return view('timeline');
+// });
 
 Route::get('/super-admin-daftar-dosen', function () {
     return view('super-admin-daftar-dosen');
@@ -54,7 +61,6 @@ Route::get('/detail-d3it', function () {
     return view('detail-d3it');
 });
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -74,6 +80,11 @@ Route::get('/detail-Matkul', function () {
 // Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
 // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
 Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy']);
+
+// Fitur Timeline
+Route::get('/timeline', [TimelineController::class, 'index']);
+Route::get('/create-timeline', [TimelineController::class, 'create']);
+Route::post('/timeline', [TimelineController::class, 'insert']);
 
 // Fitur Update Deadline
 Route::get('/update-timeline', function () {
