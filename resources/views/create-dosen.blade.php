@@ -33,10 +33,15 @@
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Mata Kuliah</label>
-                                        <input type="text" class="form-control" name="id_matkul" placeholder="Kalau ini isi angka biasa, belum tak relasikan">
+                                        <select class="form-select" name="id_matkul" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            @foreach ($matkul as $item)
+                                            <option value="{{$item->id_matkul}}">{{$item->nama}}</option>
+                                            @endforeach
+                                          </select>
                                     </div>
                                     <br>
-                                    <input class="btn btn-success btn-lg" type="submit" value="save">
+                                    <input id="btn-sa" class="btn btn-success btn-lg" type="submit" value="save">
                                 </div>
                             </form>
                         </div>

@@ -11,7 +11,7 @@
                     <div class="card-body px-5">
                         <br>
                         <div>
-                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary">Tambah Dosen</button></a>
+                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary" id="btn-sa">Tambah Dosen</button></a>
                         </div>
                         <br>
                         <div>
@@ -32,7 +32,7 @@
                                             <th scope="row">{{ $loop->iteration }}</th>
                                             <td>{{ $dosen->nidn }}</td>
                                             <td>{{ $dosen->nama }}</td>
-                                            <td>{{ $dosen->id_matkul }}</td>
+                                            <td>{{ $dosen->matkul->nama }}</td>
                                             <td>{{ $dosen->prodi->nama }}</td>
                                             <td>
                                                 <form>

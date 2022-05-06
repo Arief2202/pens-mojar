@@ -14,4 +14,7 @@
     <a class="c-sidebar-nav-link c-active" href="/timeline">
         <i class="c-sidebar-nav-icon cil-calendar"></i>Timeline
     </a>
+    <a class="c-sidebar-nav-link c-active" href="/detail-Matkul">
+        <i class="c-sidebar-nav-icon cil-book"></i>Detail Matkul
+    </a>
 </li>

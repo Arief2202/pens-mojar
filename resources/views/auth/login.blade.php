@@ -9,7 +9,8 @@
     <link rel="icon" href="images/logomojar.png">
 
     <!-- CoreUI CSS -->
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url('css/super-admin.css') }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url('css/app.css') }}" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"

@@ -16,4 +16,10 @@ class Dosen extends Model
         return $this->belongsTo(Prodi::class, 'id_prodi', 'id_prodi');
     }
 
+    public function matkul()
+    {
+        return $this->belongsTo(Matkul::class, 'id_matkul', 'id_matkul');
+    }
+
+
 }

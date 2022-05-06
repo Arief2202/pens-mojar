@@ -1,15 +1,15 @@
 @extends('layouts.app')
-@section('title', 'SUPER ADMIN | MOJAR APP')
+
 @section('content')
 <div class="container">
-    <h1 class="tittle-utama">Riwayat Pengadaan D3 Teknik Informatika</h1>
+    <h1 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h1>
     <br>
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
                     <div class="container-fluid">
-                        <div class="btn-group">
+                        {{-- <div class="btn-group">
                             <button type="button" class="btn btn-outline-primary dropdown-toggle"
                                 class="v-label v-label--active theme--light primary--text" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -47,7 +47,7 @@
                                 <a class="dropdown-item" href="#">D3</a>
                                 <a class="dropdown-item" href="#">D4</a>
                             </div>
-                        </div>
+                        </div> --}}
                         <br>
                         <br>
                         <br>
