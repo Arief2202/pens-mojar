@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h1>
+        <h2 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h2>
         <br>
         <div class="row">
             <div class="col-sm-12">

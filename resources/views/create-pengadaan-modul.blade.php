@@ -4,7 +4,7 @@
 @section('title', 'SUPER ADMIN | MOJAR APP')
 @section('content')
     <div class="container">
-        <h1 class="tittle-utama">Ajukan Pengadaan Modul</h1>
+        <h2 class="tittle-utama">Ajukan Pengadaan Modul</h2>
         <br>
         <div class="row">
             <div class="col-sm-12">

@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     @csrf
-    <h1 class="tittle-utama">Dashboard UP2AI</h1>
-    <h5 class="card-title tittle-login">Beranda</h5>
+    <h2 class="tittle-utama">Kuota Pengadaan Modul Tiap Prodi</h2>
+    {{-- <h5 class="card-title tittle-login">Beranda</h5> --}}
     <br>
     <div class="row">
         <div class="col-sm-12">
