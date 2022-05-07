@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'SUPER ADMIN | MOJAR APP')
+@section('title', 'MOJAR APP')
 @section('content')
 <div class="container">
     @csrf
