@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-body">
                         {{-- <h6 class="card-title">Timeline</h6> --}}
-                        <a href="/create-timeline"><button class="btn btn-primary">Set Timeline</button></a>
+                        <a href="/list-timeline"><button class="btn btn-primary">Set Timeline</button></a>
                         <div id="content">
                             <ul class="timeline">
                                 @foreach ($dataTimeline as $item)

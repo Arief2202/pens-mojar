@@ -22,6 +22,10 @@
                             <strong><label for="formFile" class="form-label">Buku Pedoman Pembuatan Modul Ajar</label></strong>
                             <input class="form-control" type="file" id="formFile">
                         </div>
+                        <div class="mb-3">
+                            <strong><label for="formFile" class="form-label">Upload PDF Timeline</label></strong>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
                     </div>
                 </div>
             </div>

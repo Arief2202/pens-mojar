@@ -52,15 +52,15 @@ Route::get('/berkas-pengadaan', function () {
 //     return view('timeline');
 // });
 
-Route::get('/super-admin-daftar-dosen', function () {
-    return view('super-admin-daftar-dosen');
-});
+// Route::get('/super-admin-daftar-dosen', function () {
+//     return view('super-admin-daftar-dosen');
+// });
 
 //LoginUP2Ai
 
-Route::get('/detail-d3it', function () {
-    return view('detail-d3it');
-});
+// Route::get('/detail-d3it', function () {
+//     return view('detail-d3it');
+// });
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -81,8 +81,11 @@ Route::delete('/super-admin-daftar-dosen/{id}',[DosenController::class, 'destroy
 
 // Fitur Timeline
 Route::get('/timeline', [TimelineController::class, 'index']);
+Route::get('/list-timeline', [TimelineController::class, 'index2']);
 Route::get('/create-timeline', [TimelineController::class, 'create']);
+Route::post('/list-timeline', [TimelineController::class, 'insert']);
 Route::post('/timeline', [TimelineController::class, 'insert']);
+Route::delete('/list-timeline/{id}',[TimelineController::class, 'destroy']);
 
 // Fitur Update Deadline
 Route::get('/update-timeline', function () {
