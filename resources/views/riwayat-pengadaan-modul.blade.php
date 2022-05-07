@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'RIWAYAT PENGADAAN MODUL | MOJAR APP')
 @section('content')
     <div class="container">
         <h2 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h2>

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'TIMELINE | MOJAR APP')
 @section('content')
     <div class="container">
         <h1 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h1>
@@ -16,8 +16,8 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">No.</th>
-                                        <th scope="col">TanggalAwal</th>
-                                        <th scope="col">TanggalAkhir</th>
+                                        <th scope="col">TanggalMulai</th>
+                                        <th scope="col">TanggalSelesai</th>
                                         <th scope="col">Judul</th>
                                         <th scope="col">Deskripsi</th>
                                         <th scope="col">Aksi</th>

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'MOJAR APP')
+@section('title', 'TIMELINE | MOJAR APP')
 @section('content')
     <div class="container">
         <div class="row">

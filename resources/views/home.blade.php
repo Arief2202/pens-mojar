@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'MOJAR APP')
+@section('title', 'HOME | MOJAR APP')
 @section('content')
 <div class="container">
     @csrf

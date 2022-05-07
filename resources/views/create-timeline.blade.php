@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'MOJAR APP')
+@section('title', 'TIMELINE | MOJAR APP')
 @section('content')
     <div class="container">
         <h1 class="tittle-utama">Tambah Timeline</h1>
@@ -24,13 +24,13 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="mb-3">
-                                            <strong><label class="form-group">Tanggal Awal</label></strong>
+                                            <strong><label class="form-group">Tanggal Mulai</label></strong>
                                             <input type="date" class="form-control" name="tgl_awal">
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="mb-3">
-                                            <strong><label class="form-group">Tanggal Berakhir</label></strong>
+                                            <strong><label class="form-group">Tanggal Selesai</label></strong>
                                             <input type="date" class="form-control" name="tgl_akhir">
                                         </div>
                                     </div>
