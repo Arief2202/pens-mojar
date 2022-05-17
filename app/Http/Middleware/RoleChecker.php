@@ -14,8 +14,13 @@ class RoleChecker
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next, $id)
+    public function handle(Request $request, Closure $next, ...$id_role)
     {
-        return $next($request);
+        if (in_array($request->user()->role, $id_role)) 
+        {
+            return $next($request);
+        }
+        
+        return redirect('/home');
     }
 }

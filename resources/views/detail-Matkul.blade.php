@@ -55,7 +55,7 @@
                                         <br>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th" id="text-color-detail">Ketua Tim Pembuat</th>
-                                            <td id="tittle-td">: Ir. Bayu Hidayah M.Kom</td>
+                                            <td id="tittle-td">: Tri Hadiah Muliawati, S.ST., M.Kom.</td>
                                         </tr>
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th" id="text-color-detail">Anggota Tim Pembuat</th>
