@@ -56,7 +56,7 @@ Route::get('/detail-matkul', [PengadaanController::class, 'indexDetail']);
 Route::get('/pengadaan-modul', [PengadaanController::class, 'create']);
 Route::post('/riwayat', [PengadaanController::class, 'insert']);
 
-Route::group(['middleware' => ['auth', 'RoleChecker:10']], function () {
+Route::group(['middleware' => ['auth', 'roleChecker:10']], function () {
     
     // Fitur Kelola Akun
     Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);

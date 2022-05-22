@@ -14,13 +14,12 @@ class RoleChecker
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next, ...$id_role)
+    public function handle(Request $request, Closure $next)
     {
-        if (in_array($request->user()->role, $id_role)) 
-        {
+        if (auth()->user()->id_role == 10) {
             return $next($request);
         }
-        
-        return redirect('/home');
+
+        return redirect('/home')->with('error', "You don't have an access.");
     }
 }
