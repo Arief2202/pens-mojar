@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h1 class="tittle-utama">Daftar Dosen</h1>
-        <h5 class="card-title tittle-login">Beranda \ Daftar Dosen</h5>
+        <a href="/home"><h5 class="card-title tittle-login">Beranda</a> \ <u>Daftar Dosen</u> </h5>
         <br>
         <div class="row">
             <div class="col-sm-12">

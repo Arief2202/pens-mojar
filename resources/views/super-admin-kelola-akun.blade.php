@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h1 class="tittle-utama">Kelola Akun</h1>
-        <h5 class="card-title tittle-login">Beranda \ Kelola Akun</h5>
+        <h5 class="card-title tittle-login"><a href="/home">Beranda</a> \ <u>Kelola Akun</u></h5>
         <br>
         <div class="row">
             <div class="col-sm-12">
@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <br>
                         <div>
-                            <a href="/super-admin-create"><button class="btn btn-primary">Tambah Dosen</button></a>
+                            <a href="/super-admin-create"><button class="btn btn-primary">Tambah Akun</button></a>
                         </div>
                         <br>
                         <div>
