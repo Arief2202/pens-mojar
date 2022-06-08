@@ -62,6 +62,22 @@ Route::get('/detail-matkul-pengusul', function () {
     return view('detail-matkul-pengusul');
 });
 
+Route::get('/home-reviewer', function () {
+    return view('home-reviewer');
+});
+
+Route::get('/detail-reviewer', function () {
+    return view('detail-reviewer');
+});
+
+Route::get('/catatan-reviewer', function () {
+    return view('catatan-reviewer');
+});
+
+Route::get('/timeline-reviewer', function () {
+    return view('timeline-viewer');
+});
+
 
 
 
