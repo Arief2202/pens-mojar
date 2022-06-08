@@ -38,6 +38,30 @@ Route::get('/home-tim-pengusul', function () {
     return view('home-tim-pengusul');
 });
 
+Route::get('/ajukan-pengadaan', function () {
+    return view('ajukan-pengadaan');
+});
+
+Route::get('/timeline-view', function () {
+    return view('timeline-view');
+});
+
+Route::get('/riwayat-pengusul', function () {
+    return view('riwayat-tim-pengusul');
+});
+
+Route::get('/dokumen-pengusul', function () {
+    return view('dokumen-pengusul');
+});
+
+Route::get('/detail-view', function () {
+    return view('detail-view-pengusul');
+});
+
+Route::get('/detail-matkul-pengusul', function () {
+    return view('detail-matkul-pengusul');
+});
+
 
 
 
