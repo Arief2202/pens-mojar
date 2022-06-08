@@ -34,6 +34,12 @@ Route::get('/berkas-pengadaan', function () {
     return view('berkas-pengadaan');
 });
 
+Route::get('/home-tim-pengusul', function () {
+    return view('home-tim-pengusul');
+});
+
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -57,7 +63,7 @@ Route::get('/pengadaan-modul', [PengadaanController::class, 'create']);
 Route::post('/riwayat', [PengadaanController::class, 'insert']);
 
 Route::group(['middleware' => ['auth', 'roleChecker:10']], function () {
-    
+
     // Fitur Kelola Akun
     Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);
     Route::delete('/super-admin-kelola-akun/{id}', [UserController::class, 'destroy']);
@@ -71,3 +77,5 @@ Route::group(['middleware' => ['auth', 'roleChecker:10']], function () {
     // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
     Route::delete('/super-admin-daftar-dosen/{id}', [DosenController::class, 'destroy']);
 });
+
+//Tim Pengusul
