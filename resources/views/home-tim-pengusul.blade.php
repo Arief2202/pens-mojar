@@ -47,6 +47,7 @@
                                         <th scope="col">No</th>
                                         <th scope="col">Kode Mata Kuliah</th>
                                         <th scope="col">Mata Kuliah</th>
+                                        <th scope="col">Program Studi</th>
                                         <th scope="col">Ketua Tim Pengusul</th>
                                         <th scope="col">Jenis Modul</th>
                                         
@@ -74,6 +75,7 @@
                                             <th scope="row">1</th>
                                             <td>1233456</td>
                                             <td>Matematika</td>
+                                            <td>D3 Teknik Informatika</td>
                                             <td>Pak Dosen</td>
                                             <td>Teori</td>
                                             <td>
@@ -85,6 +87,7 @@
                                             <th scope="row">1</th>
                                             <td>1233456</td>
                                             <td>Matematika</td>
+                                            <td>D3 Teknik Informatika</td>
                                             <td>Pak Dosen</td>
                                             <td>Teori</td>
                                             <td>

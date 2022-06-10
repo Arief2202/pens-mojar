@@ -16,8 +16,9 @@
                                         <th scope="col">No</th>
                                         <th scope="col">Kode Mata Kuliah</th>
                                         <th scope="col">Mata Kuliah</th>
-                                        <th scope="col">Ketua Tim Pengusul</th>
                                         <th scope="col">Program Studi</th>
+                                        <th scope="col">Ketua Tim Pengusul</th>
+                                       
                                         
                                         <th scope="col">Status</th>
                                         <th scope="col">Aksi</th>
@@ -43,8 +44,9 @@
                                             <th scope="row">1</th>
                                             <td>1233456</td>
                                             <td>Matematika</td>
-                                            <td>Pak Dosen</td>
                                             <td>D3 Teknik Informatika</td>
+                                            <td>Pak Dosen</td>
+                                            
                                             <td>
                                                 <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
                                             </td>
@@ -54,8 +56,9 @@
                                             <th scope="row">1</th>
                                             <td>1233456</td>
                                             <td>Matematika</td>
+                                            <td>D3 Teknik Informatika</td>
                                             <td>Pak Dosen</td>
-                                            <td>D4 Teknik Komputer</td>
+                                         
                                             <td>
                                                 <h5><span class="badge p-2 alert-success">Finish</span></h5>
                                             </td>
