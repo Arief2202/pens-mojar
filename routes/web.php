@@ -78,6 +78,15 @@ Route::get('/timeline-reviewer', function () {
     return view('timeline-viewer');
 });
 
+//kaprodi
+Route::get('/daftar-tim-pengusul', function () {
+    return view('kaprodi/daftar-tim-pengusul');
+});
+
+Route::get('/daftar-tim-reviewer', function () {
+    return view('kaprodi/daftar-tim-reviewer');
+});
+
 
 
 
