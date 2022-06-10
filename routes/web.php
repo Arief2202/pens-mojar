@@ -22,9 +22,12 @@ use App\Http\Controllers\PengadaanController;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('auth.login');
-})->name('login');
+    return view('auth.landingpage');
+});
 
+Route::get('/login', function () {
+    return view('auth.login');
+});
 
 Route::get('/pengadaan-modul', function () {
     return view('create-pengadaan-modul');
