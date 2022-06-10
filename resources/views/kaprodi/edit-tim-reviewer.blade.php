@@ -3,8 +3,8 @@
 @section('title', 'DAFTAR TIM | MOJAR APP')
 @section('content')
     <div class="container">
-        <h2 class="tittle-utama">Buat Tim Pengusul</h2>
-        <h6>Daftar Tim / Buat Tim Pengusul</h6>
+        <h2 class="tittle-utama">Edit Tim Reviewer</h2>
+        <h6>Daftar Tim / Edit Tim Reviewer</h6>
         <br>
         <div class="row">
             <div class="col-sm-12">

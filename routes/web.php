@@ -95,7 +95,29 @@ Route::get('/tambah-tim-reviewer', function () {
     return view('kaprodi/tambah-tim-reviewer');
 });
 
+Route::get('/detail-tim-pengusul', function () {
+    return view('kaprodi/detail-tim-pengusul');
+});
 
+Route::get('/detail-tim-reviewer', function () {
+    return view('kaprodi/detail-tim-reviewer');
+});
+
+Route::get('/edit-tim-pengusul', function () {
+    return view('kaprodi/edit-tim-pengusul');
+});
+
+Route::get('/edit-tim-reviewer', function () {
+    return view('kaprodi/edit-tim-reviewer');
+});
+
+Route::get('/detail-matakuliah-pengadaan', function () {
+    return view('kaprodi/detail-matakuliah-pengadaan');
+});
+
+Route::get('/list-pengadaan', function () {
+    return view('kaprodi/list-pengadaan');
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
