@@ -79,8 +79,7 @@
                                 </tbody>
                             </table>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary mr-2">Tambah Tim Pengusul</button>
-                                <button class="btn btn-primary">Tambah Tim Reviewer</button>
+                                <a href="/tambah-tim-reviewer"><button class="btn btn-primary">Tambah Tim Reviewer</button></a>
                             </div>
                         </div>
                             <a href="/daftar-tim-pengusul"><button class="btn btn-outline-primary">Tim Pengusul</button></a>

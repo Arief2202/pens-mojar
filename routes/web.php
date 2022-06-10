@@ -87,6 +87,13 @@ Route::get('/daftar-tim-reviewer', function () {
     return view('kaprodi/daftar-tim-reviewer');
 });
 
+Route::get('/tambah-tim-pengusul', function () {
+    return view('kaprodi/tambah-tim-pengusul');
+});
+
+Route::get('/tambah-tim-reviewer', function () {
+    return view('kaprodi/tambah-tim-reviewer');
+});
 
 
 

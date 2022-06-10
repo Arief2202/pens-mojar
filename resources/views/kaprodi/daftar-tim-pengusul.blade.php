@@ -33,7 +33,7 @@
                                 <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td>Tim Pengadaan MTK 1</td>
+                                            <td>Tim Pengusul MTK 1</td>
                                             <td>Bayu Hidayah S.Kom M.Kom</td>
                                             <td>
                                                 <h5><span class="badge p-2 alert-success">RV204101</span></h5>
@@ -42,7 +42,7 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td>Tim Pengadaan MTK 1</td>
+                                            <td>Tim Pengusul MTK 1</td>
                                             <td>Bayu Hidayah S.Kom M.Kom</td>
                                             <td>
                                                 <h5><span class="badge p-2 alert-success">RV204101</span></h5>
@@ -51,7 +51,7 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
-                                            <td>Tim Pengadaan MTK 1</td>
+                                            <td>Tim Pengusul MTK 1</td>
                                             <td>Bayu Hidayah S.Kom M.Kom</td>
                                             <td>
                                                 <h5><span class="badge p-2 alert-success">RV204101</span></h5>
@@ -60,7 +60,7 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
-                                            <td>Tim Pengadaan MTK 1</td>
+                                            <td>Tim Pengusul MTK 1</td>
                                             <td>Bayu Hidayah S.Kom M.Kom</td>
                                             <td>
                                                 <h5><span class="badge p-2 alert-success">RV204101</span></h5>
@@ -69,7 +69,7 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">5</th>
-                                            <td>Tim Pengadaan MTK 1</td>
+                                            <td>Tim Pengusul MTK 1</td>
                                             <td>Bayu Hidayah S.Kom M.Kom</td>
                                             <td>
                                                 <h5><span class="badge p-2 alert-success">RV204101</span></h5>
@@ -79,8 +79,7 @@
                                 </tbody>
                             </table>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary mr-2">Tambah Tim Pengusul</button>
-                                <button class="btn btn-primary">Tambah Tim Reviewer</button>
+                                <a href="/tambah-tim-pengusul"><button class="btn btn-primary mr-2">Tambah Tim Pengusul</button></a>
                             </div>
                         </div>
                             <button class="btn btn-outline-primary">Tim Pengusul</button>
