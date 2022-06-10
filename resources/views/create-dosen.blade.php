@@ -22,7 +22,7 @@
                                         <label class="form-label">Nama</label>
                                         <input type="text" class="form-control" name="nama">
                                     </div>
-                                    <div class="mb-3">
+                                    {{-- <div class="mb-3">
                                         <label class="form-label">Program Studi</label><br>
                                         <select class="form-select" name="id_prodi" aria-label="Default select example">
                                             <option selected>Open this select menu</option>
@@ -30,8 +30,17 @@
                                             <option value="{{$item->id_prodi}}">{{$item->nama}}</option>
                                             @endforeach
                                           </select>
-                                    </div>
+                                    </div> --}}
                                     <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Program Studi</label>
+                                        <select class="form-control form-select" id="inputGroupSelect01" name="id_prodi" aria-label="Default select example">
+                                            <option selected> Open this select menu </option>
+                                            @foreach ($prodi as $item)
+                                            <option value="{{$item->id_prodi}}">{{$item->nama}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    {{-- <div class="mb-3">
                                         <label class="form-label">Mata Kuliah</label>
                                         <select class="form-select" name="id_matkul" aria-label="Default select example">
                                             <option selected>Open this select menu</option>
@@ -39,6 +48,15 @@
                                             <option value="{{$item->id_matkul}}">{{$item->nama}}</option>
                                             @endforeach
                                           </select>
+                                    </div> --}}
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Mata Kuliah</label>
+                                        <select class="form-control form-select" id="inputGroupSelect01" name="id_matkul" aria-label="Default select example">
+                                            <option selected> Open this select menu </option>
+                                            @foreach ($matkul as $item)
+                                            <option value="{{$item->id_matkul}}">{{$item->nama}}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                     <br>
                                     <input id="btn-sa" class="btn btn-success btn-lg" type="submit" value="save">
