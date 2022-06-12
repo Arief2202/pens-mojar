@@ -2,8 +2,13 @@
 @section('title', 'SUPER ADMIN | MOJAR APP')
 @section('content')
     <div class="container">
+<<<<<<< HEAD:resources/views/superadmin/super-admin-kelola-akun.blade.php
         <h1 class="tittle-utama">Daftar Dosen</h1>
         <h5 class="card-title tittle-login">Beranda \ Daftar Dosen</h5>
+=======
+        <h1 class="tittle-utama">Kelola Akun</h1>
+        <h5 class="card-title tittle-login"><a href="/home">Beranda</a> \ <u>Kelola Akun</u></h5>
+>>>>>>> 057175df7f93a70c2582230b23a65f9c1345c70d:resources/views/super-admin/super-admin-kelola-akun.blade.php
         <br>
         <div class="row">
             <div class="col-sm-12">
@@ -11,8 +16,12 @@
                     <div class="card-body px-5">
                         <br>
                         <div>
+<<<<<<< HEAD:resources/views/superadmin/super-admin-kelola-akun.blade.php
                             <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary" id="btn-sa">Tambah
                                     Dosen</button></a>
+=======
+                            <a href="/super-admin-create"><button class="btn btn-primary">Tambah Akun</button></a>
+>>>>>>> 057175df7f93a70c2582230b23a65f9c1345c70d:resources/views/super-admin/super-admin-kelola-akun.blade.php
                         </div>
                         <br>
                         <div>
