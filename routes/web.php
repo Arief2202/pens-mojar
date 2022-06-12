@@ -82,6 +82,22 @@ Route::get('/timeline-reviewer', function () {
 });
 
 //kaprodi
+Route::get('/home-kaprodi', function () {
+    return view('kaprodi/home-kaprodi');
+});
+
+Route::get('/pengadaan-kaprodi', function () {
+    return view('kaprodi/pengadaan-kaprodi');
+});
+
+Route::get('/detail-pengadaan', function () {
+    return view('kaprodi/detail-pengadaan-kaprodi');
+});
+
+Route::get('/approval-kaprodi', function () {
+    return view('kaprodi/approval-kaprodi');
+});
+
 Route::get('/daftar-tim-pengusul', function () {
     return view('kaprodi/daftar-tim-pengusul');
 });
