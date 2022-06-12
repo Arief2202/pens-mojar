@@ -24,7 +24,7 @@
                 <div class="container">
                     <a class="card1" href="/home/kaprodi">
                         <h3>Kaprodi</h3>
-                        <p class="small">Card description with lots of great facts and interesting details.</p>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <div class="go-corner" href="#">
                             <div class="go-arrow">
                                 →
@@ -34,7 +34,7 @@
 
                     <a class="card1" href="/home/up2ai">
                         <h3>UP2AI</h3>
-                        <p class="small">Card description with lots of great facts and interesting details.</p>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <div class="go-corner" href="#">
                             <div class="go-arrow">
                                 →
@@ -44,7 +44,7 @@
 
                     <a class="card1" href="/home/pengusul">
                         <h3>Tim Pengusul</h3>
-                        <p class="small">Card description with lots of great facts and interesting details.</p>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <div class="go-corner" href="#">
                             <div class="go-arrow">
                                 →
@@ -54,7 +54,7 @@
 
                     <a class="card1" href="/home/reviewer">
                         <h3>Tim Reviewer</h3>
-                        <p class="small">Card description with lots of great facts and interesting details.</p>
+                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         <div class="go-corner" href="#">
                             <div class="go-arrow">
                                 →
