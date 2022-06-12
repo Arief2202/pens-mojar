@@ -10122,7 +10122,8 @@ html:not([dir=rtl]) .c-sidebar.c-sidebar-show.c-sidebar-right.c-sidebar-fixed.c-
 }
 .c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle {
   color: #fff;
-  background: var(--primary);
+  background: #363740;
+  /* background: var(--primary); */
 }
 .c-sidebar .c-sidebar-nav-link.c-active .c-sidebar-nav-icon, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle .c-sidebar-nav-icon {
   color: #fff;
