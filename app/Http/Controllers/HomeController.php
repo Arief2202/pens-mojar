@@ -26,6 +26,26 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function homepengusul()
+    {
+        return view('tim-pengusul.home-tim-pengusul');
+    }
+    
+    public function homereviewer()
+    {
+        return view('tim-reviewer.home-reviewer');
+    }
+
+    public function homekaprodi()
+    {
+        return view('kaprodi.home-kaprodi');
+    }
+
+    public function homeup2ai()
+    {
+        return view('home');
+    }
+
     public function adminHome()
     {
         return redirect('/super-admin-kelola-akun');

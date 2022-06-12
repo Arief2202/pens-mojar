@@ -17,13 +17,13 @@
         <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
             aria-expanded="false">
             <div class="c-avatar">
-                <img class="c-avatar-img" src="https://www.kibrispdr.org/dwn/8/patrick-star-wallpaper-hd.gif" alt="">
+                <img class="c-avatar-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1200px-Circle-icons-profile.svg.png" alt="">
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0">
             <div class="dropdown-header bg-light py-2"><strong>Account</strong></div>
-            <a class="dropdown-item" href="#">
-                <i class="c-icon mfe-2 cil-user"></i>Profile
+            <a class="dropdown-item" href="/selectrole">
+                <i class="c-icon mfe-2 cil-people"></i>Select Role
             </a>
             <a class="dropdown-item" href="#"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

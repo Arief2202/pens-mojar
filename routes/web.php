@@ -26,7 +26,7 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('auth.login')->name('login');
+    return view('auth.login');
 
 });
 
@@ -139,7 +139,15 @@ Route::get('/list-pengadaan', function () {
     return view('kaprodi/list-pengadaan');
 });
 
+
+// Route Home For Every Role
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home/pengusul', [App\Http\Controllers\HomeController::class, 'homepengusul'])->name('homepengusul');
+Route::get('/home/reviewer', [App\Http\Controllers\HomeController::class, 'homereviewer'])->name('homereviewer');
+Route::get('/home/up2ai', [App\Http\Controllers\HomeController::class, 'homeup2ai'])->name('homeup2ai');
+Route::get('/home/kaprodi', [App\Http\Controllers\HomeController::class, 'homekaprodi'])->name('homekaprodi');
+
+
 
 // List Halaman Menu Tiap Role User
 Route::get('/selectrole', function () {
