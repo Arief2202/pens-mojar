@@ -11,7 +11,8 @@
                     <div class="card-body px-5">
                         <br>
                         <div>
-                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary" id="btn-sa">Tambah Dosen</button></a>
+                            <a href="/super-admin-create-dosen"><button class="btn btn-lg btn-primary" id="btn-sa">Tambah
+                                    Dosen</button></a>
                         </div>
                         <br>
                         <div>
@@ -20,26 +21,27 @@
                                     <tr>
                                         <th scope="col">No</th>
                                         <th scope="col">NIDN</th>
-                                        <th scope="col">Nama</th>
-                                        <th scope="col">Mata Kuliah</th>
-                                        <th scope="col">Prodi</th>
-                                        <th scope="col">Action</th>
+                                        <th scope="col">Username</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Role</th>
+                                        <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($dataDosen as $dosen)
+                                    @foreach ($data as $key => $akun)
                                         <tr>
                                             <th scope="row">{{ $loop->iteration }}</th>
-                                            <td>{{ $dosen->nidn }}</td>
-                                            <td>{{ $dosen->nama }}</td>
-                                            <td>{{ $dosen->matkul->nama }}</td>
-                                            <td>{{ $dosen->prodi->nama }}</td>
+                                            <td>{{ $akun->nidn }}</td>
+                                            <td>{{ $akun->name }}</td>
+                                            <td>{{ $akun->email }}</td>
+                                            <td>{{ $akun->role->nama_role }}</td>
                                             <td>
                                                 <form>
-                                                    <a href="/{{ $dosen->id }}/edit"><button class="btn btn-primary"
+                                                    <a href="/{{ $akun->id }}/edit"><button class="btn btn-primary"
                                                             type="submit"><i class="bi bi-pen-fill"></i></button></a>
-                                                    <form action="/super-admin-daftar-dosen/{{ $dosen->id }}" method="POST"><button class="btn btn-danger" type="submit">
-                                                        <i class="bi bi-trash-fill"></i></button>
+                                                    <form action="/super-admin-kelola-akun/{{ $akun->id }}"
+                                                        method="POST"><button class="btn btn-danger" type="submit">
+                                                            <i class="bi bi-trash-fill"></i></button>
                                                         @method('DELETE')
                                                         @csrf
                                                     </form>
@@ -50,7 +52,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        {{ $dataDosen->links() }}
+                        {{-- {{ $dataDosen->links() }} --}}
                     </div>
                 </div>
             </div>

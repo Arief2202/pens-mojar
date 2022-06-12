@@ -26,7 +26,8 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('auth.login');
+    return view('auth.login')->name('login');
+
 });
 
 Route::get('/pengadaan-modul', function () {
@@ -124,6 +125,12 @@ Route::get('/list-pengadaan', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+// List Halaman Menu Tiap Role User
+Route::get('/selectrole', function () {
+    return view('roles-menu.timpengusul');
+});
+
+ 
 // Fitur Timeline
 Route::get('/timeline', [TimelineController::class, 'index']);
 Route::get('/list-timeline', [TimelineController::class, 'index2']);

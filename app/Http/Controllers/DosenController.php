@@ -12,20 +12,20 @@ class DosenController extends Controller
     public function index()
     {
         $dataDosen = Dosen::paginate(5);
-        return view('super-admin-daftar-dosen', compact(['dataDosen']));
+        return view('superadmin.super-admin-daftar-dosen', compact(['dataDosen']));
     }
 
     public function create()
     {
         $prodi = Prodi::all();
         $matkul = Matkul::all();
-        return view('create-dosen', compact('prodi', 'matkul'));
+        return view('superadmin.create-dosen', compact('prodi', 'matkul'));
     }
 
     public function insert(Request $request)
     {
         Dosen::create($request->all());
-        return redirect('super-admin-daftar-dosen');
+        return redirect('superadmin.super-admin-daftar-dosen');
     }
 
     // public function edit($id)
@@ -45,7 +45,7 @@ class DosenController extends Controller
     {
         Dosen::destroy($dataDosen->id);
         // $dataDosen->delete();
-        return redirect('/super-admin-daftar-dosen')->with('success', 
+        return redirect('superadmin.super-admin-daftar-dosen')->with('success', 
         'Data telah dihapus.');
 
     }

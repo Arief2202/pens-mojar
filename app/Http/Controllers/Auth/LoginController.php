@@ -53,8 +53,20 @@ class LoginController extends Controller
             if (auth()->user()->id_role == 10) {
                 return redirect('/super-admin-kelola-akun');
             } 
+            else if(auth()->user()->id_role == 1){
+                return redirect('/selectrole');
+            }
+            else if(auth()->user()->id_role == 2){
+                return redirect('/selectrole');
+            }
+            else if(auth()->user()->id_role == 3){
+                return redirect('/selectrole');
+            }
+            else if(auth()->user()->id_role == 4){
+                return redirect('/selectrole');
+            }
             else{
-                return redirect()->route('home');
+                return redirect()->route('login');
             }
         }else{
             return redirect()->route('login')
