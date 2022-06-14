@@ -9,8 +9,8 @@
     <link rel="icon" href="images/logomojar.png">
 
     <!-- CoreUI CSS -->
-    <link rel="stylesheet" href="{{ url('css/super-admin.css') }}" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url('css/app.css') }}" crossorigin="anonymous">
+    {{-- <link rel="stylesheet" href="{{ url('css/super-admin.css') }}" crossorigin="anonymous"> --}}
+    <link rel="stylesheet" href="{{ url('css/login.css') }}" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="c-app flex-row align-items-center">
+<body class="c-app flex-row align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('{{ asset('images/pens.png') }}');">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">
