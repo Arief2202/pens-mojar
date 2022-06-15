@@ -21,7 +21,7 @@ body {
 }
 
 h2 {
-    color: #262626;
+    color: #103967;
     font-size: 26px;
     line-height: 24px;
     font-weight: 700;
@@ -29,7 +29,7 @@ h2 {
   }
 
 h3 {
-  color: #262626;
+  color: #103967;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -40,7 +40,7 @@ p {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
-  color: #666666;
+  color: #103967db;
 }
 p.small {
   font-size: 14px;
@@ -56,14 +56,14 @@ p.small {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-color: #321fdb;
+  background-color: #103967;
   border-radius: 0 4px 0 32px;
 }
 
 .go-arrow {
   margin-top: -4px;
   margin-right: -4px;
-  color: white;
+  color: #F3C808;
   font-family: courier, sans;
 }
 
@@ -85,7 +85,7 @@ p.small {
   z-index: -1;
   top: -16px;
   right: -16px;
-  background: #321fdb;
+  background: #103967;
   height: 32px;
   width: 32px;
   border-radius: 32px;
@@ -99,9 +99,9 @@ p.small {
 
 .card1:hover p {
   transition: all 0.3s ease-out;
-  color: rgba(224, 221, 255, 0.8);
+  color: #F3C808db;
 }
 .card1:hover h3 {
   transition: all 0.3s ease-out;
-  color: #ffffff;
+  color: #F3C808;
 }
