@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.app-kaprodi')
 @section('title', 'RIWAYAT PENGADAAN MODUL | MOJAR APP')
 @section('content')
     <div class="container">
-        <h2 class="tittle-utama">Pengadaan (D3 Teknik Informatika)</h2>
+        <h2 class="tittle-utama">KAPRODI D3 Teknik Informatika</h2>
         <br>
         <div class="row">
             <div class="col-sm-12">
@@ -37,128 +37,69 @@
                                 <a class="dropdown-item" href="#">Semester 8</a>
                             </div>
                         </div>
-                        
+                        <br>
                         <br>
                         <div>
                             <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">No. Kode</th>
+                                        <th scope="col">Kode Mata Kuliah</th>
                                         <th scope="col">Mata Kuliah</th>
-                                        <th scope="col">Pendanaan</th>
+                                        <th scope="col">Semester</th>
+                                        <th scope="col">Tahun</th>
+                                        <th scope="col">Ketua </th>
+                                        <th scope="col">Jenis Modul</th>
+                                        
                                         <th scope="col">Status</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>123456</td>
-                                        <td>Matematika</td>
-                                        <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
-                                            <label class="form-check-label" for="flexRadioDefault1">Praktikum</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Teori</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Interaktif</label>
-                                        </div>
-                                        </td>
-                                        <td>
-                                            <h5><span class="badge p-2 alert-danger">Unapproved</span></h5>
-                                        </td>
-                                        <td><a href="/detail-pengadaan"><button class="btn btn-outline-primary"
-                                            type="button">Detail</button>
-                                        </td></a>
-                                    </tr>
-                                
+                                 {{--   @foreach ($dataPengadaan as $item)
+                                        <tr>
+                                            <th scope="row">{{ $loop->iteration }}</th>
+                                            <td>{{ $item->matkul->kode_matkul }}</td>
+                                            <td>{{ $item->matkul->nama }}</td>
+                                            <td>{{ $item->modul->jenis_modul }}</td>
+                                            <td>{{ $item->kuota }}</td>
+                                            <td>
+                                                <h5><span class="badge p-2 alert-danger">Unapproved</span></h5>
+                                            </td>
+                                            <td><a href="/detail-matkul"><button class="btn btn-outline-primary"
+                                                type="button">Detail</button></td></a>
+                                        </tr>
+                                    @endforeach  --}}
 
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>1233456</td>
-                                        <td>Matematika</td>
-                                        <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
-                                            <label class="form-check-label" for="flexRadioDefault1">Praktikum</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Teori</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Interaktif</label>
-                                        </div>
-                                        </td>
-                                        <td>
-                                            <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
-                                        </td>
-                                        <td><a href="/detail-pengadaan"><button class="btn btn-outline-primary"
-                                            type="button">Detail</button>
-                                        </td></a>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>1233456</td>
-                                        <td>Matematika</td>
-                                        <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
-                                            <label class="form-check-label" for="flexRadioDefault1">Praktikum</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Teori</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Interaktif</label>
-                                        </div>
-                                        </td>
-                                        <td>
-                                            <h5><span class="badge p-2 alert-info">Approved by KAPRODI</span></h5>
-                                        </td>
-                                        <td><a href="/detail-pengadaan"><button class="btn btn-outline-primary"
-                                            type="button">Detail</button>
-                                        </td></a>
-                                    </tr>
-
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>1233456</td>
-                                        <td>Matematika</td>
-                                        <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
-                                            <label class="form-check-label" for="flexRadioDefault1">Praktikum</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Teori</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" id="flexRadioDefault2" type="radio" name="flexRadioDefault" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">Interaktif</label>
-                                        </div>
-                                        </td>
-                                        <td>
-                                            <h5><span class="badge p-2 alert-success">Finish</span></h5>
-                                        </td>
-                                        <td><a href="/detail-pengadaan"><button class="btn btn-outline-primary"
-                                            type="button">Detail</button>
-                                        </td></a>
-                                    </tr> 
+                                     <tr>
+                                            <th scope="row">1</th>
+                                            <td>1233456</td>
+                                            <td>Matematika</td>
+                                            <td>4</td>
+                                            <td>2020</td>
+                                            <td>Pak Dosen</td>
+                                            <td>Teori</td>
+                                            <td>
+                                                <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
+                                            </td>
+                                            <td><a href="/detail-matkul-pengusul"><button class="btn btn-outline-primary">Detail</button></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>1233456</td>
+                                            <td>Matematika</td>
+                                            <td>4</td>
+                                            <td>2020</td>
+                                            <td>Pak Dosen</td>
+                                            <td>Teori</td>
+                                            <td>
+                                                <h5><span class="badge p-2 alert-success">Finish</span></h5>
+                                            </td>
+                                            <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
+                                        </tr>
                                 </tbody>
                             </table>
+                         {{--  {{ $dataPengadaan->links() }}  --}}
                         </div>
                     </div>
                 </div>

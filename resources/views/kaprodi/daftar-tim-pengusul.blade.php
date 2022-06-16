@@ -1,4 +1,4 @@
-@extends('layouts.app-tim-pengusul')
+@extends('layouts.app-kaprodi')
 @section('title', 'DAFTAR TIM | MOJAR APP')
 @section('content')
     <div class="container">
@@ -23,7 +23,7 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
-                                        <th scope="col">NAMA TIM</th>
+                                        <th scope="col">MATA KULIAH</th>
                                         <th scope="col">KETUA TIM</th>
                                         
                                         <th scope="col">STATUS</th>
@@ -78,12 +78,9 @@
                                         </tr>
                                 </tbody>
                             </table>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <a href="/tambah-tim-pengusul"><button class="btn btn-primary mr-2">Tambah Tim Pengusul</button></a>
-                            </div>
+                           
                         </div>
-                            <button class="btn btn-outline-primary">Tim Pengusul</button>
-                            <a href="/daftar-tim-reviewer"><button class="btn btn-outline-primary">Tim Reviewer</button></a>
+                            
                     </div>
                 </div>
             </div>
