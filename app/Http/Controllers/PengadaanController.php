@@ -15,7 +15,7 @@ class PengadaanController extends Controller
     public function index()
     {
         $dataPengadaan= Pengadaan::paginate(5);
-        return view('riwayat-pengadaan-modul', compact(['dataPengadaan']));
+        return view('tim-pengusul.riwayat-tim-pengusul', compact(['dataPengadaan']));
     }
 
     public function indexDetail()

@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <strong><label class="form-label">Mata Kuliah</label></strong>
-                                    <select class="form-select" nama="id_matkul" aria-label="Default select example">
+                                    <select class="form-select" name="id_matkul" aria-label="Default select example">
                                         <option selected>Pilih Mata Kuliah</option>
                                         @foreach ($matkul as $item)
                                             <option value="{{ $item->id_matkul }}">{{ $item->nama }}</option>
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <strong><label class="form-label">Jenis Modul</label></strong>
-                                    <select class="form-select" nama="id_modul" aria-label="Default select example">
+                                    <select class="form-select" name="id_modul" aria-label="Default select example">
                                         <option selected>Pilih Jenis Modul</option>
                                         @foreach ($modul as $item)
                                             <option value="{{ $item->id_modul }}">{{ $item->jenis_modul}}</option>
@@ -54,7 +54,7 @@
                                 </div> --}}
                                 <div class="mb-3">
                                     <strong><label class="form-label">Ketua Tim Pengusul</label></strong>
-                                    <select class="form-select" nama="id_dosen" aria-label="Default select example">
+                                    <select class="form-select" name="id_dosen" aria-label="Default select example">
                                         <option selected>Pilih Ketua Tim Untuk Pengajuan Modul Ini</option>
                                         @foreach ($dosen as $item)
                                             <option value="{{ $item->id_dosen }}">{{ $item->nama}}</option>

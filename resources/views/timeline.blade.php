@@ -14,7 +14,6 @@
                                     <li class="event"
                                         data-date="{{ date('d F', strtotime($item->tgl_awal)) }} - {{ date('d F', strtotime($item->tgl_akhir)) }}">
                                         <h3>{{ $item->judul }}</h3>
-                                        <p>{{ $item->deskripsi }}</p>
                                     </li>
                                 @endforeach
                                 {{-- <li class="event" data-date="05/05/2022">
