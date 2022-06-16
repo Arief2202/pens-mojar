@@ -10081,7 +10081,7 @@ html:not([dir=rtl]) .c-sidebar.c-sidebar-show.c-sidebar-right.c-sidebar-fixed.c-
 }
 .c-sidebar {
   color: #fff;
-  background: #363740;
+  background: #103967;
 }
 *[dir=rtl] .c-sidebar.c-sidebar-right {
   border: 0;
@@ -10122,7 +10122,7 @@ html:not([dir=rtl]) .c-sidebar.c-sidebar-show.c-sidebar-right.c-sidebar-fixed.c-
 }
 .c-sidebar .c-sidebar-nav-link.c-active, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle {
   color: #fff;
-  background: #363740;
+  background: #103967;
   /* background: var(--primary); */
 }
 .c-sidebar .c-sidebar-nav-link.c-active .c-sidebar-nav-icon, .c-sidebar .c-active.c-sidebar-nav-dropdown-toggle .c-sidebar-nav-icon {

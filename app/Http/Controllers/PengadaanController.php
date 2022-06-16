@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Akademik;
+use App\Models\Prodi;
 use App\Models\Dosen;
 use App\Models\Matkul;
 use App\Models\Modul;
@@ -27,12 +29,25 @@ class PengadaanController extends Controller
         $matkul = Matkul::all();
         $modul = Modul::all();
         $dosen = Dosen::all();
-        return view('create-pengadaan-modul', compact('modul', 'matkul', 'dosen'));
+        $akademik = Akademik::all();
+        return view('tim-pengusul.create-pengadaan-modul', compact('modul', 'matkul', 'dosen', 'akademik'));
     }
 
     public function insert(Request $request)
     {
         Pengadaan::create($request->all());
         return redirect('riwayat');
+    }
+
+    public function getProdi($id)
+    {
+        $prodi = Prodi::where('id_akademik',$id)->get();
+        return response()->json($prodi);
+    }
+
+    public function getMatkul($id)
+    {
+        $matkul = Matkul::where('id_prodi',$id)->get();
+        return response()->json($matkul);
     }
 }

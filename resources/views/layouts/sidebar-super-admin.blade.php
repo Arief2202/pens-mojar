@@ -6,7 +6,7 @@
             class="c-sidebar-brand-minimized" alt="Brand Logo"> --}}
 
             <h3 class="c-sidebar-brand-full" alt="Brand Logo" >Mojar App</h3>
-            <img src="images/logomojar.png" width="46" height="46"
+            <img src="images/logo.png" width="46" height="46"
             class="c-sidebar-brand-minimized" alt="Brand Logo">
     </div>
     <ul class="c-sidebar-nav">

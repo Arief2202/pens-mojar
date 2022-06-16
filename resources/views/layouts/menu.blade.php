@@ -8,7 +8,7 @@
     <a class="c-sidebar-nav-link c-active" href="/riwayat">
         <i class="c-sidebar-nav-icon cil-history"></i>Riwayat Pengadaan Modul
     </a>
-    <a class="c-sidebar-nav-link c-active" href="/pengadaan-modul">
+    <a class="c-sidebar-nav-link c-active" href="/pengajuan-modul">
         <i class="c-sidebar-nav-icon cil-book"></i>Pengadaan Modul
     </a>
     <a class="c-sidebar-nav-link c-active" href="/berkas-pengadaan">

@@ -27,7 +27,6 @@ Route::get('/', function () {
 
 Route::get('/login', function () {
     return view('auth.login');
-
 });
 
 Route::get('/pengadaan-modul', function () {
@@ -55,7 +54,7 @@ Route::get('/riwayat-pengusul', function () {
 });
 
 Route::get('/dokumen-pengusul', function () {
-    return view('dokumen-pengusul');
+    return view('tim-pengusul.dokumen-pengusul');
 });
 
 Route::get('/detail-view', function () {
@@ -154,7 +153,7 @@ Route::get('/selectrole', function () {
     return view('roles-menu.timpengusul');
 });
 
- 
+
 // Fitur Timeline
 Route::get('/timeline', [TimelineController::class, 'index']);
 Route::get('/list-timeline', [TimelineController::class, 'index2']);
@@ -171,23 +170,30 @@ Route::get('/update-timeline', function () {
 // Fitur Pengadaan Modul Ajar
 Route::get('/riwayat', [PengadaanController::class, 'index']);
 Route::get('/detail-matkul', [PengadaanController::class, 'indexDetail']);
-Route::get('/pengadaan-modul', [PengadaanController::class, 'create']);
+Route::get('/pengajuan-modul', [PengadaanController::class, 'create']);
+Route::get('/getProdi/{id}', [PengadaanController::class, 'getProdi']);
 Route::post('/riwayat', [PengadaanController::class, 'insert']);
 
-Route::group(['middleware' => ['auth', 'roleChecker:10']], function () {
+// Fitur Kelola Akun
+Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);
+Route::delete('/super-admin-kelola-akun/{id}', [UserController::class, 'destroy']);
 
-    // Fitur Kelola Akun
-    Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);
-    Route::delete('/super-admin-kelola-akun/{id}', [UserController::class, 'destroy']);
+// Fitur Daftar Dosen
+Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
+Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
+Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
 
-    // Fitur Daftar Dosen
-    Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
-    Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
-    Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
-
-    // Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
-    // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
-    Route::delete('/super-admin-daftar-dosen/{id}', [DosenController::class, 'destroy']);
-});
+// Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
+// Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
+Route::delete('/super-admin-daftar-dosen/{id}', [DosenController::class, 'destroy']);
 
 //Tim Pengusul
+// Route::get('/', function () {
+//     $akademik = App\Models\Akademik::all();
+//     return view('tim-pengusul.create-pengadaan-modul',['akademik' => $akademik]);
+// });
+
+// Route::get('/pengajuan-modul/getProdi/{id}', function ($id) {
+//     $prodi = App\Models\Prodi::where('id_akademik',$id)->get();
+//     return response()->json($prodi);
+// });
