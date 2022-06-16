@@ -66,19 +66,19 @@ Route::get('/detail-matkul-pengusul', function () {
 });
 
 Route::get('/home-reviewer', function () {
-    return view('home-reviewer');
+    return view('tim-reviewer/home-reviewer');
 });
 
 Route::get('/detail-reviewer', function () {
-    return view('detail-reviewer');
+    return view('tim-reviewer/detail-reviewer');
 });
 
 Route::get('/catatan-reviewer', function () {
-    return view('catatan-reviewer');
+    return view('tim-reviewer/catatan-reviewer');
 });
 
 Route::get('/timeline-reviewer', function () {
-    return view('timeline-viewer');
+    return view('tim-reviewer/timeline-viewer');
 });
 
 //kaprodi
@@ -102,6 +102,11 @@ Route::get('/daftar-tim-pengusul', function () {
     return view('kaprodi/daftar-tim-pengusul');
 });
 
+Route::get('/dokumen', function () {
+    return view('kaprodi/dokumen');
+});
+
+
 Route::get('/daftar-tim-reviewer', function () {
     return view('kaprodi/daftar-tim-reviewer');
 });
@@ -122,12 +127,20 @@ Route::get('/detail-tim-reviewer', function () {
     return view('kaprodi/detail-tim-reviewer');
 });
 
+Route::get('/detail-kaprodi', function () {
+    return view('kaprodi/detail-kaprodi');
+});
+
 Route::get('/edit-tim-pengusul', function () {
     return view('kaprodi/edit-tim-pengusul');
 });
 
 Route::get('/edit-tim-reviewer', function () {
     return view('kaprodi/edit-tim-reviewer');
+});
+
+Route::get('/timeline-kaprodi', function () {
+    return view('kaprodi/timeline-kaprodi');
 });
 
 Route::get('/detail-matakuliah-pengadaan', function () {

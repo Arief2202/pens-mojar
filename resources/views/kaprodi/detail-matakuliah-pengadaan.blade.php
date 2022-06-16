@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-kaprodi')
 @section('title', 'DETAIL MATA KULIAH | MOJAR APP')
 @section('content')
 <div class="container">
@@ -88,10 +88,28 @@
                                         </tbody>
                                     </table>
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <a href="/"><button class="btn btn-primary mr-1">Kembali</button></a>
-                                        <a href="/"><button class="btn btn-primary mr-1">Hapus</button></a>
-                                        <a href="/"><button class="btn btn-primary">Edit</button></a>
+                                        <button type="button" class="btn btn-outline-primary mr-2">Kembali</button>
+                                        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#staticBackdrop">
+                                        Batal Approved
+                                        </button>
                                     </div>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="staticBackdropLabel">PERHATIAN !!!</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                         <h6>Apakah anda yakin ingin menghapus Approved Pengadaan ?</h6>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-danger">Hapus</button>
+                                        </div>
+                                        </div>
+                                  
                                 </div>
                             </div>
                         </div>
