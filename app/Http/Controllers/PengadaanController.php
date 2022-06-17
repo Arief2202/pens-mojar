@@ -15,13 +15,16 @@ class PengadaanController extends Controller
     public function index()
     {
         $dataPengadaan= Pengadaan::paginate(5);
-        return view('tim-pengusul.riwayat-tim-pengusul', compact(['dataPengadaan']));
+        // $dataPengadaan= Pengadaan::with('prodi')->get();
+        // dd($dataPengadaan);
+        return view('riwayat-pengadaan-modul', compact(['dataPengadaan']));
     }
 
-    public function indexDetail()
+    public function indexDetail($id)
     {
-        $dataPengadaan= Pengadaan::paginate(5);
-        return view('detail-matkul', compact(['dataPengadaan']));
+        $pengadaan= Pengadaan::findOrFail($id);
+        // dd($pengadaan->approval);
+        return view('detail-pengadaan', compact(['pengadaan']));
     }
 
     public function create()
@@ -30,11 +33,12 @@ class PengadaanController extends Controller
         $modul = Modul::all();
         $dosen = Dosen::all();
         $akademik = Akademik::all();
-        return view('tim-pengusul.create-pengadaan-modul', compact('modul', 'matkul', 'dosen', 'akademik'));
+        return view('create-pengadaan-modul', compact('modul', 'matkul', 'dosen', 'akademik'));
     }
 
     public function insert(Request $request)
     {
+        // dd($request->all());
         Pengadaan::create($request->all());
         return redirect('riwayat');
     }

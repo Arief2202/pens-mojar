@@ -1,4 +1,4 @@
-@extends('layouts.app-tim-reviewer')
+@extends('layouts.app')
 @section('title', 'RIWAYAT PENGADAAN MODUL | MOJAR APP')
 @section('content')
     <div class="container">

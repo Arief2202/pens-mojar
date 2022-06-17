@@ -54,75 +54,39 @@
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
+                                        <th scope="col">Prodi</th>
                                         <th scope="col">Kode Mata Kuliah</th>
                                         <th scope="col">Mata Kuliah</th>
                                         <th scope="col">Ketua Tim Pengusul</th>
                                         <th scope="col">Jenis Modul</th>
-                                  
                                         <th scope="col">Status</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                {{--    @foreach ($dataPengadaan as $item)
+                                   @foreach ($dataPengadaan as $key => $item)
                                         <tr>
-                                            <th scope="row">{{ $loop->iteration }}</th>
+                                            <th scope="row">{{ $dataPengadaan->firstItem() + $key }}</th>
+                                            <td>{{ $item->prodi->nama }}</td>
                                             <td>{{ $item->matkul->kode_matkul }}</td>
                                             <td>{{ $item->matkul->nama }}</td>
+                                            <td>{{ $item->dosen->nama }}</td>
                                             <td>{{ $item->modul->jenis_modul }}</td>
-                                            <td>{{ $item->kuota }}</td>
                                             <td>
-                                                <h5><span class="badge p-2 alert-danger">Unapproved</span></h5>
+                                                <h5>
+                                                    @if ($item->status == 0)
+                                                        <span class="badge p-2 alert-warning">Pending</span>
+                                                    @elseif($item->status == 1)
+                                                        <span class="badge p-2 alert-success">Approved</span>
+                                                    @else
+                                                        <span class="badge p-2 alert-danger">Unapproved</span>
+                                                    @endif
+                                                </h5>
                                             </td>
-                                            <td><a href="/detail-matkul"><button class="btn btn-outline-primary"
+                                            <td><a href="/detail/pengadaan/{{ $item->id }}"><button class="btn btn-outline-primary"
                                                 type="button">Detail</button></td></a>
                                         </tr>
                                     @endforeach
-
-                                    <tr>
-                                            <th scope="row">1</th>
-                                            <td>1233456</td>
-                                            <td>Matematika</td>
-                                            <td>Teori</td>
-                                            <td>5</td>
-                                            <td>
-                                                <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
-                                            </td>
-                                            <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>1233456</td>
-                                            <td>Matematika</td>
-                                            <td>Teori</td>
-                                            <td>5</td>
-                                            <td>
-                                                <h5><span class="badge p-2 alert-success">Finish</span></h5>
-                                            </td>
-                                            <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
-                                        </tr> --}}
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>1233456</td>
-                                            <td>Matematika</td>
-                                            <td>Pak Dosen</td>
-                                            <td>Teori</td>
-                                            <td>
-                                                <h5><span class="badge p-2 alert-warning">Approved by UP2AI</span></h5>
-                                            </td>
-                                            <td><a href="/detail-matkul-pengusul"><button class="btn btn-outline-primary">Detail</button></a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>1233456</td>
-                                            <td>Matematika</td>
-                                            <td>Pak Dosen</td>
-                                            <td>Teori</td>
-                                            <td>
-                                                <h5><span class="badge p-2 alert-success">Finish</span></h5>
-                                            </td>
-                                            <td><button class="btn btn-outline-primary" type="button">Detail</button></td>
-                                        </tr>
                                 </tbody>
                             </table>
                             {{ $dataPengadaan->links() }}

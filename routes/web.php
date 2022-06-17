@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApprovalPengadaanController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DosenController;
@@ -49,9 +50,9 @@ Route::get('/timeline-view', function () {
     return view('timeline-view');
 });
 
-Route::get('/riwayat-pengusul', function () {
-    return view('riwayat-tim-pengusul');
-});
+// Route::get('/riwayat-pengusul', function () {
+//     return view('riwayat-tim-pengusul');
+// });
 
 Route::get('/dokumen-pengusul', function () {
     return view('tim-pengusul.dokumen-pengusul');
@@ -182,10 +183,13 @@ Route::get('/update-timeline', function () {
 
 // Fitur Pengadaan Modul Ajar
 Route::get('/riwayat', [PengadaanController::class, 'index']);
-Route::get('/detail-matkul', [PengadaanController::class, 'indexDetail']);
+Route::get('/detail/pengadaan/{id}', [PengadaanController::class, 'indexDetail']);
 Route::get('/pengajuan-modul', [PengadaanController::class, 'create']);
 Route::get('/getProdi/{id}', [PengadaanController::class, 'getProdi']);
 Route::post('/riwayat', [PengadaanController::class, 'insert']);
+
+// Fitur Approval Pengadaan Modul Ajar
+Route::post('/jawab-pengadaan', [ApprovalPengadaanController::class, 'answer']);
 
 // Fitur Kelola Akun
 Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);

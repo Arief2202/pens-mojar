@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <strong><label for="prodi" class="form-label">Prodi</label></strong>
-                                    <select class="form-select"  name="prodi" id="prodi">
+                                    <select class="form-select"  name="id_prodi" id="prodi">
                                         {{-- <option hidden>Pilih Prodi</option> --}}
                                     </select>
                                 </div>
@@ -85,11 +85,12 @@
                                        dataType: "json",
                                        success:function(data)
                                        {
+                                        console.log(data);
                                          if(data){
                                             $('#prodi').empty();
                                             $('#prodi').append('<option hidden>Pilih Prodi</option>'); 
                                             $.each(data, function(key, prodi){
-                                                $('select[name="prodi"]').append('<option value="'+ key +'">' + prodi.nama+ '</option>');
+                                                $('select[name="id_prodi"]').append('<option value="'+ prodi.id_prodi +'">' + prodi.nama+ '</option>');
                                             });
                                         }else{
                                             $('#prodi').empty();

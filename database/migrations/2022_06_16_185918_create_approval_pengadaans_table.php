@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePengadaanTable extends Migration
+class CreateApprovalPengadaansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreatePengadaanTable extends Migration
      */
     public function up()
     {
-        Schema::create('pengadaan', function (Blueprint $table) {
+        Schema::create('approval_pengadaans', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_matkul');
-            $table->bigInteger('id_modul');
-            $table->integer('kuota');
-            $table->bigInteger('id_dosen');
-            $table->integer('status');
+            $table->foreignId('pengadaan_id');
+            $table->foreignId('user_id');
+            $table->boolean('answer');
+            $table->text('note')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreatePengadaanTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pengadaan');
+        Schema::dropIfExists('approval_pengadaans');
     }
 }

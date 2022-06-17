@@ -72,12 +72,19 @@
                                         <tr id="garis">
                                             <th scope="row" class="tittle-th">Modul Ajar</th>
                                             <td><button type="button" class="btn btn-outline-primary">Lihat</button></td>
-                                            <tr id="garis">
-                                                <th><button type="button" class="btn btn-outline-success">Approved</button></th>
-                                               
-                                            </tr>
                                         </tbody>
                                     </table>
+                                    <form action="/jawab-pengadaan" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="pengadaan_id" value="{{ $pengadaan->id }}">
+                                        <input type="hidden" name="user_id" value="{{ Auth::id() }}">
+                                        <textarea name="note" id="" cols="70" rows="10">
+                                            {!!$pengadaan->approval->note!!}
+                                        </textarea>
+                                        <br>
+                                        <input type="submit" name="answer" value="Approve" class="btn btn-outline-success">
+                                        <input type="submit" name="answer" value="Not Approve" class="btn btn-outline-danger">
+                                    </form>
                                 </div>
                             </div>
                         </div>

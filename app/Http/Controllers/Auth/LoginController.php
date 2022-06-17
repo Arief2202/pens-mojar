@@ -57,13 +57,13 @@ class LoginController extends Controller
                 return redirect('/selectrole');
             }
             else if(auth()->user()->id_role == 2){
-                return redirect('/selectrole');
+                return redirect('/home/up2ai');
             }
             else if(auth()->user()->id_role == 3){
-                return redirect('/selectrole');
+                return redirect('/home/pengusul');
             }
             else if(auth()->user()->id_role == 4){
-                return redirect('/selectrole');
+                return redirect('/home/reviewer');
             }
             else{
                 return redirect()->route('home');

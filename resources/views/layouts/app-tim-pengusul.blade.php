@@ -24,7 +24,7 @@
 
 <body class="c-app">
     @csrf
-@include('layouts.sidebar-tim-pengusul')
+@include('layouts.sidebar')
 
 <div class="c-wrapper">
     <header class="c-header c-header-light c-header-fixed">

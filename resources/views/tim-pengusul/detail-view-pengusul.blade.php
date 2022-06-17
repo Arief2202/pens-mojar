@@ -1,4 +1,4 @@
-@extends('layouts.app-tim-pengusul')
+@extends('layouts.app')
 @section('title', 'DETAIL MATA KULIAH | MOJAR APP')
 @section('content')
 <div class="container">
