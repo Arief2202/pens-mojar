@@ -28,7 +28,7 @@ Route::get('/', function () {
 
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->name('login');
 
 Route::get('/pengadaan-modul', function () {
     return view('create-pengadaan-modul');
@@ -153,64 +153,66 @@ Route::get('/list-pengadaan', function () {
 });
 
 
-// Route Home For Every Role
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home/pengusul', [App\Http\Controllers\HomeController::class, 'homepengusul'])->name('homepengusul');
-Route::get('/home/reviewer', [App\Http\Controllers\HomeController::class, 'homereviewer'])->name('homereviewer');
-Route::get('/home/up2ai', [App\Http\Controllers\HomeController::class, 'homeup2ai'])->name('homeup2ai');
-Route::get('/home/kaprodi', [App\Http\Controllers\HomeController::class, 'homekaprodi'])->name('homekaprodi');
+Route::middleware('auth')->group(function () {
+    // Route Home For Every Role
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home/pengusul', [App\Http\Controllers\HomeController::class, 'homepengusul'])->name('homepengusul');
+    Route::get('/home/reviewer', [App\Http\Controllers\HomeController::class, 'homereviewer'])->name('homereviewer');
+    Route::get('/home/up2ai', [App\Http\Controllers\HomeController::class, 'homeup2ai'])->name('homeup2ai');
+    Route::get('/home/kaprodi', [App\Http\Controllers\HomeController::class, 'homekaprodi'])->name('homekaprodi');
 
 
 
-// List Halaman Menu Tiap Role User
-Route::get('/selectrole', function () {
-    return view('roles-menu.timpengusul');
+    // List Halaman Menu Tiap Role User
+    Route::get('/selectrole', function () {
+        return view('roles-menu.timpengusul');
+    });
+
+
+    // Fitur Timeline
+    Route::get('/timeline', [TimelineController::class, 'index']);
+    Route::get('/list-timeline', [TimelineController::class, 'index2']);
+    Route::get('/create-timeline', [TimelineController::class, 'create']);
+    Route::post('/list-timeline', [TimelineController::class, 'insert']);
+    Route::post('/timeline', [TimelineController::class, 'insert']);
+    Route::delete('/list-timeline/{id}', [TimelineController::class, 'destroy']);
+
+    // Fitur Update Deadline
+    Route::get('/update-timeline', function () {
+        return view('update-timeline');
+    });
+
+    // Fitur Pengadaan Modul Ajar
+    Route::get('/riwayat', [PengadaanController::class, 'index']);
+    Route::get('/detail/pengadaan/{id}', [PengadaanController::class, 'indexDetail']);
+    Route::get('/pengajuan-modul', [PengadaanController::class, 'create']);
+    Route::get('/getProdi/{id}', [PengadaanController::class, 'getProdi']);
+    Route::post('/riwayat', [PengadaanController::class, 'insert']);
+
+    // Fitur Approval Pengadaan Modul Ajar
+    Route::post('/jawab-pengadaan', [ApprovalPengadaanController::class, 'answer']);
+
+    // Fitur Kelola Akun
+    Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);
+    Route::delete('/super-admin-kelola-akun/{id}', [UserController::class, 'destroy']);
+
+    // Fitur Daftar Dosen
+    Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
+    Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
+    Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
+
+    // Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
+    // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
+    Route::delete('/super-admin-daftar-dosen/{id}', [DosenController::class, 'destroy']);
+
+    //Tim Pengusul
+    // Route::get('/', function () {
+    //     $akademik = App\Models\Akademik::all();
+    //     return view('tim-pengusul.create-pengadaan-modul',['akademik' => $akademik]);
+    // });
+
+    // Route::get('/pengajuan-modul/getProdi/{id}', function ($id) {
+    //     $prodi = App\Models\Prodi::where('id_akademik',$id)->get();
+    //     return response()->json($prodi);
+    // });
 });
-
-
-// Fitur Timeline
-Route::get('/timeline', [TimelineController::class, 'index']);
-Route::get('/list-timeline', [TimelineController::class, 'index2']);
-Route::get('/create-timeline', [TimelineController::class, 'create']);
-Route::post('/list-timeline', [TimelineController::class, 'insert']);
-Route::post('/timeline', [TimelineController::class, 'insert']);
-Route::delete('/list-timeline/{id}', [TimelineController::class, 'destroy']);
-
-// Fitur Update Deadline
-Route::get('/update-timeline', function () {
-    return view('update-timeline');
-});
-
-// Fitur Pengadaan Modul Ajar
-Route::get('/riwayat', [PengadaanController::class, 'index']);
-Route::get('/detail/pengadaan/{id}', [PengadaanController::class, 'indexDetail']);
-Route::get('/pengajuan-modul', [PengadaanController::class, 'create']);
-Route::get('/getProdi/{id}', [PengadaanController::class, 'getProdi']);
-Route::post('/riwayat', [PengadaanController::class, 'insert']);
-
-// Fitur Approval Pengadaan Modul Ajar
-Route::post('/jawab-pengadaan', [ApprovalPengadaanController::class, 'answer']);
-
-// Fitur Kelola Akun
-Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);
-Route::delete('/super-admin-kelola-akun/{id}', [UserController::class, 'destroy']);
-
-// Fitur Daftar Dosen
-Route::get('/super-admin-daftar-dosen', [DosenController::class, 'index']);
-Route::get('/super-admin-create-dosen', [DosenController::class, 'create']);
-Route::post('/super-admin-daftar-dosen', [DosenController::class, 'insert']);
-
-// Route::get('/super-admin-daftar-dosen/{id}/edit',[DosenController::class, 'edit']);
-// Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
-Route::delete('/super-admin-daftar-dosen/{id}', [DosenController::class, 'destroy']);
-
-//Tim Pengusul
-// Route::get('/', function () {
-//     $akademik = App\Models\Akademik::all();
-//     return view('tim-pengusul.create-pengadaan-modul',['akademik' => $akademik]);
-// });
-
-// Route::get('/pengajuan-modul/getProdi/{id}', function ($id) {
-//     $prodi = App\Models\Prodi::where('id_akademik',$id)->get();
-//     return response()->json($prodi);
-// });

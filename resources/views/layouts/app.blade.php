@@ -15,6 +15,9 @@
           integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
           crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.12.1/r-2.3.0/sb-1.3.4/datatables.min.css"/>
+    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> --}}
+ 
 
     @yield('third_party_stylesheets')
 
@@ -26,6 +29,7 @@
 @include('layouts.sidebar')
 
 <div class="c-wrapper">
+    @yield('modal')
     <header class="c-header c-header-light c-header-fixed">
         @include('layouts.header')
     </header>
@@ -42,8 +46,12 @@
     </footer>
 </div>
 
-<script src="{{ mix('js/app.js') }}" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+{{-- <script src="https://coreui.io/demo/4.0/free/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script> --}}
+{{-- <script src="https://coreui.io/demo/4.0/free/vendors/simplebar/js/simplebar.min.js"></script> --}}
+{{-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> --}}
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
 @yield('third_party_scripts')
 

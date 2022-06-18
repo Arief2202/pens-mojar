@@ -20,21 +20,25 @@ class ApprovalPengadaanController extends Controller
         $answer = $request->answer == "Approve";
         $status = $request->answer == "Approve" ? 1 : 2;
 
-        $check = ApprovalPengadaan::where('user_id', Auth::id())->where('pengadaan_id', $request->pengadaan_id)->first();
+        // $check = ApprovalPengadaan::where('user_id', Auth::id())->where('pengadaan_id', $request->pengadaan_id)->first();
 
-        if($check) {
-            $approval = $check;
+        if($request->approval_id != '') {
+            $approval = ApprovalPengadaan::find($request->approval_id);
         } else {
-            $approval = New ApprovalPengadaan($request->except(['_token', 'answer']));
+            $approval = New ApprovalPengadaan($request->except(['_token', 'answer', 
+            'approval_id']));
         }
 
         $approval->answer = $answer;
         $approval->note = $request->note;
         $approval->save();
         
-        $pengadaan = Pengadaan::findOrFail($request->pengadaan_id);
-        $pengadaan->status = $status;
-        $pengadaan->save();
+        // $checkApprovals = ApprovalPengadaan::where('pengadaan_id')->where()
+        // if($)
+        
+        // $pengadaan = Pengadaan::findOrFail($request->pengadaan_id);
+        // $pengadaan->status = $status;
+        // $pengadaan->save();
 
         return redirect('/riwayat');
     }

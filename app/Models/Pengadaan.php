@@ -49,7 +49,17 @@ class Pengadaan extends Model
      */
     public function approvals()
     {
-        return $this->hasMany(ApprovalPengadaan::class, 'foreign_key', 'local_key');
+        return $this->hasMany(ApprovalPengadaan::class);
+    }
+
+    /**
+     * Get the user that owns the Pengadaan
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id_pengusul', 'id');
     }
     
 }

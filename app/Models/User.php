@@ -47,4 +47,14 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Role::class, 'id_role', 'id_role');
     }
+
+    /**
+     * Get all of the approvals for the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function approvals()
+    {
+        return $this->hasMany(ApprovalPengadaan::class);
+    }
 }

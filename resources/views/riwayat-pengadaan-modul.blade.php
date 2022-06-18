@@ -49,8 +49,8 @@
                         </div> --}}
                         <br>
                         <br>
-                        <div>
-                            <table class="table">
+                        <div class="table-responsive">
+                            <table id="example" class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
@@ -64,9 +64,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                   @foreach ($dataPengadaan as $key => $item)
+                                   @forelse ($dataPengadaan as $key => $item)
                                         <tr>
-                                            <th scope="row">{{ $dataPengadaan->firstItem() + $key }}</th>
+                                            {{-- <th scope="row">{{ $dataPengadaan->firstItem() + $key }}</th> --}}
+                                            <th scope="row">{{ $loop->iteration }}</th>
                                             <td>{{ $item->prodi->nama }}</td>
                                             <td>{{ $item->matkul->kode_matkul }}</td>
                                             <td>{{ $item->matkul->nama }}</td>
@@ -74,25 +75,48 @@
                                             <td>{{ $item->modul->jenis_modul }}</td>
                                             <td>
                                                 <h5>
-                                                    @if ($item->status == 0)
+                                                    @forelse ($item->approvals as $data)
+                                                        <span class="d-block mb-2 badge p-2 alert-{{$data->answer ? 'success' : 'danger'}}">
+                                                            {{$data->answer ? "Approved By {$data->user->role->nama_role}" : "Denied By {$data->user->role->nama_role}"}}
+                                                        </span>
+                                                    @empty
+                                                        <span class="badge p-2 alert-warning">Pending</span>
+                                                    
+                                                    @endforelse
+                                                    {{-- @if ($item->status == 0)
                                                         <span class="badge p-2 alert-warning">Pending</span>
                                                     @elseif($item->status == 1)
                                                         <span class="badge p-2 alert-success">Approved</span>
                                                     @else
                                                         <span class="badge p-2 alert-danger">Unapproved</span>
-                                                    @endif
+                                                    @endif --}}
                                                 </h5>
                                             </td>
                                             <td><a href="/detail/pengadaan/{{ $item->id }}"><button class="btn btn-outline-primary"
                                                 type="button">Detail</button></td></a>
                                         </tr>
-                                    @endforeach
+                                    @empty
+                                        <tr>
+                                            <td colspan="8">Belum Ada Pengadaan Di Database!</td>
+                                        </tr>
+                                    @endforelse
                                 </tbody>
                             </table>
-                            {{ $dataPengadaan->links() }}
+                            {{-- {{ $dataPengadaan->links() }} --}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    @endsection
+@endsection
+
+@push('page_scripts')
+
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "pageLength": 5
+            });
+        });
+    </script>
+@endpush

@@ -21,7 +21,10 @@
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0">
-            <div class="dropdown-header bg-light py-2"><strong>Account</strong></div>
+            <div class="dropdown-header bg-light py-2">
+                <strong class="d-block" style="font-size: 16px; letter-spacing: 1px">{{Auth::user()->name}}</strong>
+                {{Auth::user()->role->nama_role}}
+            </div>
             <a class="dropdown-item" href="/selectrole">
                 <i class="c-icon mfe-2 cil-people"></i>Select Role
             </a>

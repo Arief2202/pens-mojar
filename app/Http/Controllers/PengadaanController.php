@@ -9,14 +9,14 @@ use App\Models\Matkul;
 use App\Models\Modul;
 use Illuminate\Http\Request;
 use App\Models\Pengadaan;
+use Illuminate\Support\Facades\Auth;
 
 class PengadaanController extends Controller
 {
     public function index()
     {
-        $dataPengadaan= Pengadaan::paginate(5);
+        $dataPengadaan= Pengadaan::with(['approvals', 'approvals.user.role'])->get();
         // $dataPengadaan= Pengadaan::with('prodi')->get();
-        // dd($dataPengadaan);
         return view('riwayat-pengadaan-modul', compact(['dataPengadaan']));
     }
 
