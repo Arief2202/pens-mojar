@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'HOME | MOJAR APP')
+<link rel="stylesheet" href="{{ url('css/card-data.css') }}">
 @section('content')
 <div class="container">
     @csrf
@@ -11,33 +12,57 @@
             <div class="card">
                 <div class="card-body px-5">
                     <div class="card-columns">
-                        <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
-                            <a href="/riwayat">
-                                <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
-                                <div class="title">
-                                    <th scope="col">Teknik Informatika</th>
-                                </div>
-                                </button>
-                            </a>
-                            <div class="card-body row text-center">
-                                <div class="col">
-                                    <div class="fs-5 fw-semibold">12</div>
-                                    <div class="text-uppercase text-medium-emphasis small">praktikum</div>
-                                </div>
-                                <div class="vr"></div>
-                                <div class="col">
-                                    <div class="fs-5 fw-semibold">16</div>
-                                    <div class="text-uppercase text-medium-emphasis small">teori</div>
-                                </div>
-                                <div class="vr"></div>
-                                <div class="col">
-                                    <div class="fs-5 fw-semibold">8</div>
-                                    <div class="text-uppercase text-medium-emphasis small">interaktif</div>
+                        @forelse ($datas as $item)
+                        <div class="tile">
+                            <div class="wrapper">
+                                <div class="header">{{$item['nama_prodi']}}</div>
+                                <div class="stats">
+                                    <div>
+                                        <strong>PRATIKUM</strong>{{$item['data']['praktikum']}}
+                                    </div>
+
+                                    <div>
+                                        <strong>TEORI</strong>{{$item['data']['teori']}}
+                                    </div>
+
+                                    <div>
+                                        <strong>INTERAKTIF</strong>{{$item['data']['interaktif']}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
+{{-- 
+                            <div class="card mb-4 " style="--cui-card-cap-bg: #3b5998">
+                                <a href="/riwayat">
+                                    <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
+                                    <div class="title">
+                                        <th scope="col">{{$item['nama_prodi']}}</th>
+                                    </div>
+                                    </button>
+                                </a>
+                                <div class="card-body row text-center">
+                                    <div class="col">
+                                        <div class="fs-5 fw-semibold">{{$item['data']['praktikum']}}</div>
+                                        <div class="text-uppercase text-medium-emphasis small">praktikum</div>
+                                    </div>
+                                    <div class="vr"></div>
+                                    <div class="col">
+                                        <div class="fs-5 fw-semibold">{{$item['data']['teori']}}</div>
+                                        <div class="text-uppercase text-medium-emphasis small">teori</div>
+                                    </div>
+                                    <div class="vr"></div>
+                                    <div class="col">
+                                        <div class="fs-5 fw-semibold">{{$item['data']['interaktif']}}</div>
+                                        <div class="text-uppercase text-medium-emphasis small">interaktif</div>
+                                    </div>
+                                </div>
+                            </div> --}}
+                        @empty
+                            
+                        @endforelse
 
-                        <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
+                        {{-- <div class="card mb-4" style="--cui-card-cap-bg: #3b5998">
                             <a href="/riwayat">
                                 <button class="card-header position-relative d-flex justify-content-center align-items-center text-white bg-dark">
                                 <div class="title">
@@ -321,7 +346,7 @@
                                     <div class="text-uppercase text-medium-emphasis small">interaktif</div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>

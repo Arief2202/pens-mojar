@@ -20,6 +20,7 @@ class CreatePengadaanTable extends Migration
             $table->bigInteger('id_modul');
             $table->integer('kuota');
             $table->bigInteger('id_dosen');
+            $table->bigInteger('id_prodi');
             $table->integer('status');
             $table->timestamps();
         });

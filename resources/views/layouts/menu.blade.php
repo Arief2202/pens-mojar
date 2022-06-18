@@ -1,5 +1,5 @@
 <li class="c-sidebar-nav-item">
-    <a class="c-sidebar-nav-link c-active" href="/home-tim-pengusul">
+    <a class="c-sidebar-nav-link c-active" href="/home">
         <i class="c-sidebar-nav-icon cil-home"></i>Home
     </a>
     {{-- <a class="c-sidebar-nav-link c-active" href="/super-admin-kelola-akun">
