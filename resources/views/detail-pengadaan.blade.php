@@ -3,7 +3,7 @@
 @section('modal')
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Keterangan</h5>
@@ -146,7 +146,7 @@
                                                     <td>
                                                         <span
                                                             class="mb-2 badge p-2 alert-{{ $data->answer ? 'success' : 'danger' }}">
-                                                            {{ $data->answer ? "Approved By {$data->user->role->nama_role}" : "Denied By {$data->user->role->nama_role}" }}
+                                                            {{ $data->answer ? "Approved By {$data->user->name}" : "Denied By {$data->user->role->nama_role}" }}
                                                         </span>
                                                     </td>
                                                     <td><span class="mx-2">:</span></td>

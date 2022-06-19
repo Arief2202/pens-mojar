@@ -9,9 +9,14 @@
         <i class="c-sidebar-nav-icon cil-history"></i>Riwayat Pengadaan Modul
     </a>
     @if(auth()->user()->id_role == 3)
-        <a class="c-sidebar-nav-link c-active" href="/pengajuan-modul">
+        <a class="c-sidebar-nav-link c-active" href="/pengajuan/modul">
             <i class="c-sidebar-nav-icon cil-book"></i>Pengadaan Modul
         </a>
+    @endif
+    @if (in_array(Auth::user()->id_role, [1, 2]))
+    <a class="c-sidebar-nav-link c-active" href="/pengajuan/kuota">
+        <i class="c-sidebar-nav-icon cil-book"></i>Alokasi Kuota Prodi
+    </a>
     @endif
     <a class="c-sidebar-nav-link c-active" href="/dokumen-pengusul">
         <i class="c-sidebar-nav-icon cil-file"></i>Dokumen Pengadaan

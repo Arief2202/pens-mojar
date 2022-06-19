@@ -10,12 +10,21 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="card">
-                <div class="card-body px-5">
+                <div class="card-body">
                     <div class="card-columns">
                         @forelse ($datas as $item)
                         <div class="tile">
                             <div class="wrapper">
                                 <div class="header">{{$item['nama_prodi']}}</div>
+                                <div class="dates">
+                                    <div class="start">
+                                        <strong>Alokasi Kuota Tahun Ini</strong>3
+                                        <span></span>
+                                    </div>
+                                    <div class="ends">
+                                        <strong>Pengajuan Modul Baru</strong>2
+                                    </div>
+                                </div>
                                 <div class="stats">
                                     <div>
                                         <strong>PRATIKUM</strong>{{$item['data']['praktikum']}}

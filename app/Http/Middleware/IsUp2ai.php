@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class IsAdmin
+class IsUp2ai
 {
     /**
      * Handle an incoming request.
@@ -16,12 +16,11 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (auth()->user()->id_role == 10) {
+        if (auth()->user()->id_role == 2) {
             return $next($request);
-        } else {
-            return back()->withErrors('anda bukan superadmin');
         }
-
-        return redirect('/login')->with('error', "Anda tidak punya akses Superadmin");
+        else {
+        return redirect('/login')->with('error', "Anda tidak punya akses UP2AI");
+    }
     }
 }

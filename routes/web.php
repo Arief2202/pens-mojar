@@ -185,7 +185,7 @@ Route::middleware('auth')->group(function () {
     // Fitur Pengadaan Modul Ajar
     Route::get('/riwayat', [PengadaanController::class, 'index']);
     Route::get('/detail/pengadaan/{id}', [PengadaanController::class, 'indexDetail']);
-    Route::get('/pengajuan-modul', [PengadaanController::class, 'create']);
+    Route::get('/pengajuan/modul', [PengadaanController::class, 'create']);
     Route::get('/getProdi/{id}', [PengadaanController::class, 'getProdi']);
     Route::post('/riwayat', [PengadaanController::class, 'insert']);
 
@@ -205,14 +205,4 @@ Route::middleware('auth')->group(function () {
     // Route::put('/super-admin-daftar-dosen/{id}',[DosenController::class, 'update']);
     Route::delete('/super-admin-daftar-dosen/{id}', [DosenController::class, 'destroy']);
 
-    //Tim Pengusul
-    // Route::get('/', function () {
-    //     $akademik = App\Models\Akademik::all();
-    //     return view('tim-pengusul.create-pengadaan-modul',['akademik' => $akademik]);
-    // });
-
-    // Route::get('/pengajuan-modul/getProdi/{id}', function ($id) {
-    //     $prodi = App\Models\Prodi::where('id_akademik',$id)->get();
-    //     return response()->json($prodi);
-    // });
 });

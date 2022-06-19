@@ -1,3 +1,7 @@
+.wrapper {
+	display: inline-block;
+	width: 100%;
+}
 
 .tile{
 	width: 100%;
@@ -14,12 +18,13 @@
     border-bottom-left-radius: 10px;
     animation-name: example;
     animation-duration: 0.25s;
-    border-left: 5px solid #103967;
+    border-left: 5px solid #F3C808;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .header{
 	border-bottom:1px solid #ebeff2;
+	background:#f7f8fa;
 	padding:19px 0;
 	text-align:center;
 	color:#59687f;
@@ -56,7 +61,7 @@
 .dates strong,
 .stats strong{
 	display:block;
-	color:#adb8c2;
+	color:#98a0a9;
 	font-size:11px;
 	font-weight:700;
 }
@@ -70,7 +75,7 @@
 }
 .stats{
 	border-top:1px solid #ebeff2;
-	background:#f7f8fa;
+	background:white;
 	overflow:auto;
 	padding:15px 0;
 	font-size:16px;
