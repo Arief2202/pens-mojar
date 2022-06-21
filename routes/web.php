@@ -148,6 +148,9 @@ Route::get('/list-pengadaan', function () {
     return view('kaprodi/list-pengadaan');
 });
 
+Route::get('/under-maintain', function () {
+    return view('maintainpage');
+});
 
 Route::middleware('auth')->group(function () {
     // Route Home For Every Role

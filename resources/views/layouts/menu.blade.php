@@ -14,7 +14,7 @@
         </a>
     @endif
     @if (in_array(Auth::user()->id_role, [1, 2]))
-    <a class="c-sidebar-nav-link {{ (request()->is('/alokasi/kuota')) ? 'active' : '' }}" href="/alokasi/kuota">
+    <a class="c-sidebar-nav-link {{ (request()->is('/alokasi/kuota')) ? 'active' : '' }}" href="/under-maintain">
         <i class="c-sidebar-nav-icon cil-book"></i>Alokasi Kuota Prodi
     </a>
     @endif
@@ -23,7 +23,7 @@
         <i class="c-sidebar-nav-icon cil-people"></i>Set Tim Reviewer
     </a>
     @endif --}}
-    <a class="c-sidebar-nav-link {{ (request()->is('/dokumen')) ? 'active' : '' }}" href="/dokumen">
+    <a class="c-sidebar-nav-link {{ (request()->is('/dokumen')) ? 'active' : '' }}" href="/under-maintain">
         <i class="c-sidebar-nav-icon cil-file"></i>Dokumen Pengadaan
     </a>
     <a class="c-sidebar-nav-link {{ (request()->is('/timeline')) ? 'active' : '' }}" href="/timeline">
