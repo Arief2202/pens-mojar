@@ -90,8 +90,8 @@
                                                 <tr id="garis">
                                                     <th scope="row" class="tittle-th">Proposal</th>
                                                     <td>
-                                                        <button type="button"
-                                                            class="btn btn-outline-primary">Lihat</button>
+                                                        {{-- <iframe src="/proposal/{{$pengadaan->path_proposal}}" height="200" width="300"></iframe> --}}
+                                                        <a href="/proposal/{{$pengadaan->path_proposal}}"><button type="button" class="btn btn-outline-primary">Lihat</button></a>
                                                         @if ($pengadaan->id_pengusul == Auth::id())
                                                             <button type="button"
                                                                 class="btn btn-primary ml-2">Edit</button>

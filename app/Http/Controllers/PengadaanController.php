@@ -9,6 +9,7 @@ use App\Models\Matkul;
 use App\Models\Modul;
 use Illuminate\Http\Request;
 use App\Models\Pengadaan;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 
 class PengadaanController extends Controller
@@ -38,8 +39,25 @@ class PengadaanController extends Controller
 
     public function insert(Request $request)
     {
-        // dd($request->all());
-        Pengadaan::create($request->all());
+           
+        $file = $request->file('path_proposal');
+        
+		$nama_file = time()."_".$file->getClientOriginalName();
+        
+        // isi dengan nama folder tempat kemana file diupload
+		$tujuan_upload = 'proposal';
+		$file->move($tujuan_upload,$nama_file);
+ 
+		Pengadaan::create([
+            'id_pengusul'   => $request->id_pengusul,
+            'id_matkul'     => $request->id_matkul,
+            'id_modul'      => $request->id_modul,
+            'id_dosen'      => $request->id_dosen,
+            'id_prodi'      => $request->id_prodi,
+			'path_proposal' => $nama_file,
+            'status'        => $request->status,
+		]);
+
         return redirect('riwayat');
     }
 

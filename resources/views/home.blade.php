@@ -74,7 +74,7 @@
 
                         <div class="tile">
                             <div class="wrapper">
-                                <div class="header">Teknik Informatika</div>
+                                <div class="header">Teknik KOmputer</div>
                                 <div class="dates">
                                     <div class="start">
                                         <strong>Alokasi Kuota Tahun Ini</strong>3

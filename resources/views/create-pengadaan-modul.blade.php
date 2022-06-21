@@ -12,12 +12,12 @@
                     <div class="card-body">
                         <br>
                         <div>
-                            <form action="/riwayat" method="POST" enctype="multipart/form-data"> 
+                            <form action="{{ route('insert') }}" method="POST" enctype="multipart/form-data"> 
                                 @csrf
 
                                 <div class="mb-3">
                                     <strong><label for="akademik" class="form-label">Akademik</label></strong>
-                                    <select class="form-select"  name="" id="akademik" required>
+                                    <select class="form-select"  name="id_pengusul" id="akademik" required>
                                         <option hidden>Pilih Akademik</option>
                                         @foreach ($akademik as $item)
                                         <option value="{{ $item->id }}">{{ $item->akademik }}</option>
