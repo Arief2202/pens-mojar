@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-body px-5">
+                    <div class="card-body">
 
                         <div class="row">
                             <div class="col-sm-6">
@@ -39,23 +39,23 @@
                                                 <br>
                                                 <tr id="garis">
                                                     <th scope="row" class="tittle-th">Mata Kuliah</th>
-                                                    <td id="tittle-td">: Workshop Kecerdasan Buatan (AI)</td>
+                                                    <td id="tittle-td">: {{$pengadaan->matkul->nama}}</td>
                                                 </tr>
                                                 <tr id="garis">
                                                     <th scope="row" class="tittle-th">No. Kode</th>
-                                                    <td id="tittle-td">: AI007</td>
+                                                    <td id="tittle-td">: {{$pengadaan->matkul->kode_matkul}}</td>
                                                 </tr>
-                                                <tr id="garis">
+                                                {{-- <tr id="garis">
                                                     <th scope="row" class="tittle-th">Semester</th>
                                                     <td id="tittle-td">: 4</td>
-                                                </tr>
+                                                </tr> --}}
                                                 <tr id="garis">
                                                     <th scope="row" class="tittle-th">Tahun Pendanaan</th>
                                                     <td id="tittle-td">: 2022</td>
                                                 </tr>
                                                 <tr id="garis">
                                                     <th scope="row" class="tittle-th">Jenis Pendanaan</th>
-                                                    <td id="tittle-td">: Modul Pratikum</td>
+                                                    <td id="tittle-td">: {{$pengadaan->modul->jenis_modul}}</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -72,16 +72,16 @@
                                                 <tr id="garis">
                                                     <th scope="row" class="tittle-th" id="text-color-detail">Ketua Tim
                                                         Pembuat</th>
-                                                    <td id="tittle-td">: Tri Hadiah Muliawati, S.ST., M.Kom.</td>
+                                                    <td id="tittle-td">: {{$pengadaan->dosen->nama}}</td>
                                                 </tr>
-                                                <tr id="garis">
+                                                {{-- <tr id="garis">
                                                     <th scope="row" class="tittle-th" id="text-color-detail">Anggota Tim
                                                         Pembuat</th>
                                                     <td id="tittle-td">: Tri Hadiah Muliawati, S.ST., M.Kom. <br>
                                                         : Tri Hadiah Muliawati, S.ST., M.Kom. <br>
                                                         : Tri Hadiah Muliawati, S.ST., M.Kom.
                                                     </td>
-                                                </tr>
+                                                </tr> --}}
                                             </tbody>
                                         </table>
 
@@ -114,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 px-5">
                                 @if (!in_array(Auth::user()->id_role, [3, 10]))
                                     <h5 class="mb-0">Apakah Anda Setuju Dengan Pengadaan Ini?</h5>
                                     <form action="/jawab-pengadaan" method="POST">
@@ -137,16 +137,17 @@
                                     </form>
                                 @else
                                     <div class="mb-3">
-                                        <h5>
+                                        <strong>
                                             Status Pengadaan Saat Ini :
-                                        </h5>
+                                        </strong>
+                                        <br>
                                         <table>
                                             @forelse ($pengadaan->approvals as $data)
                                                 <tr>
                                                     <td>
                                                         <span
                                                             class="mb-2 badge p-2 alert-{{ $data->answer ? 'success' : 'danger' }}">
-                                                            {{ $data->answer ? "Approved By {$data->user->name}" : "Denied By {$data->user->role->nama_role}" }}
+                                                            {{ $data->answer ? "Approved By {$data->user->role->nama_role}" : "Denied By {$data->user->role->nama_role}" }}
                                                         </span>
                                                     </td>
                                                     <td><span class="mx-2">:</span></td>

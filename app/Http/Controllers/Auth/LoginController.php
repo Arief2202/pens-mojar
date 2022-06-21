@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -53,20 +54,8 @@ class LoginController extends Controller
             if (auth()->user()->id_role == 10) {
                 return redirect('/super-admin-kelola-akun');
             } 
-            else if(auth()->user()->id_role == 1){
-                return redirect('/selectrole');
-            }
-            else if(auth()->user()->id_role == 2){
-                return redirect('/home/up2ai');
-            }
-            else if(auth()->user()->id_role == 3){
-                return redirect('/home/pengusul');
-            }
-            else if(auth()->user()->id_role == 4){
-                return redirect('/home/reviewer');
-            }
-            else{
-                return redirect()->route('home');
+            elseif(in_array(Auth::user()->id_role, [1, 2, 3, 4])) {
+                return redirect('/home');
             }
         }else{
             return redirect()->route('login')

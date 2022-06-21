@@ -25,9 +25,9 @@
                 <strong class="d-block" style="font-size: 16px; letter-spacing: 1px">{{Auth::user()->name}}</strong>
                 {{Auth::user()->role->nama_role}}
             </div>
-            <a class="dropdown-item" href="/selectrole">
+            {{-- <a class="dropdown-item" href="/selectrole">
                 <i class="c-icon mfe-2 cil-people"></i>Select Role
-            </a>
+            </a> --}}
             <a class="dropdown-item" href="#"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <i class="c-icon mfe-2 cil-account-logout"></i>Logout

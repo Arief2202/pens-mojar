@@ -103,10 +103,6 @@ Route::get('/daftar-tim-pengusul', function () {
     return view('kaprodi/daftar-tim-pengusul');
 });
 
-Route::get('/dokumen', function () {
-    return view('kaprodi/dokumen');
-});
-
 
 Route::get('/daftar-tim-reviewer', function () {
     return view('kaprodi/daftar-tim-reviewer');
@@ -156,17 +152,6 @@ Route::get('/list-pengadaan', function () {
 Route::middleware('auth')->group(function () {
     // Route Home For Every Role
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/home/pengusul', [App\Http\Controllers\HomeController::class, 'homepengusul'])->name('homepengusul');
-    Route::get('/home/reviewer', [App\Http\Controllers\HomeController::class, 'homereviewer'])->name('homereviewer');
-    Route::get('/home/up2ai', [App\Http\Controllers\HomeController::class, 'homeup2ai'])->name('homeup2ai');
-    Route::get('/home/kaprodi', [App\Http\Controllers\HomeController::class, 'homekaprodi'])->name('homekaprodi');
-
-
-
-    // List Halaman Menu Tiap Role User
-    Route::get('/selectrole', function () {
-        return view('roles-menu.timpengusul');
-    });
 
 
     // Fitur Timeline
@@ -191,6 +176,11 @@ Route::middleware('auth')->group(function () {
 
     // Fitur Approval Pengadaan Modul Ajar
     Route::post('/jawab-pengadaan', [ApprovalPengadaanController::class, 'answer']);
+
+    // Fitur Dokumen
+    Route::get('/dokumen', function () {
+        return view('berkas-pengadaan');
+    });
 
     // Fitur Kelola Akun
     Route::get('/super-admin-kelola-akun', [UserController::class, 'index']);

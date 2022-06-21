@@ -19,7 +19,6 @@
                                         <th scope="col">TanggalMulai</th>
                                         <th scope="col">TanggalSelesai</th>
                                         <th scope="col">Judul</th>
-                                        <th scope="col">Deskripsi</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
@@ -30,7 +29,6 @@
                                             <td>{{ $item->tgl_awal }}</td>
                                             <td>{{ $item->tgl_akhir }}</td>
                                             <td>{{ $item->judul }}</td>
-                                            <td>{{ $item->deskripsi }}</td>
                                             <td>
                                                 <form action="/list-timeline/{{ $item->id }}" method="POST"><button class="btn btn-danger" type="submit">
                                                 <i class="bi bi-trash-fill"></i></button>

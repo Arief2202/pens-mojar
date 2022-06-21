@@ -12,12 +12,12 @@
                     <div class="card-body">
                         <br>
                         <div>
-                            <form action="riwayat" method="POST"> 
+                            <form action="/riwayat" method="POST" enctype="multipart/form-data"> 
                                 @csrf
 
                                 <div class="mb-3">
                                     <strong><label for="akademik" class="form-label">Akademik</label></strong>
-                                    <select class="form-select"  name="" id="akademik">
+                                    <select class="form-select"  name="" id="akademik" required>
                                         <option hidden>Pilih Akademik</option>
                                         @foreach ($akademik as $item)
                                         <option value="{{ $item->id }}">{{ $item->akademik }}</option>
@@ -26,14 +26,14 @@
                                 </div>
                                 <div class="mb-3">
                                     <strong><label for="prodi" class="form-label">Prodi</label></strong>
-                                    <select class="form-select"  name="id_prodi" id="prodi">
+                                    <select class="form-select"  name="id_prodi" id="prodi" required>
                                         {{-- <option hidden>Pilih Prodi</option> --}}
                                     </select>
                                 </div>
                                 <div class="mb-3">
                                     <strong><label class="form-label">Mata Kuliah</label></strong>
-                                    <select class="form-select" name="id_matkul" aria-label="Default select example">
-                                        <option selected>Pilih Mata Kuliah</option>
+                                    <select class="form-select" name="id_matkul" aria-label="Default select example" required>
+                                        <option disabled selected value>Pilih Mata Kuliah</option>
                                         @foreach ($matkul as $item)
                                             <option value="{{ $item->id_matkul }}">{{ $item->nama }}</option>
                                         @endforeach
@@ -41,35 +41,30 @@
                                 </div>
                                 <div class="mb-3">
                                     <strong><label class="form-label">Jenis Modul</label></strong>
-                                    <select class="form-select" name="id_modul" aria-label="Default select example">
-                                        <option selected>Pilih Jenis Modul</option>
+                                    <select class="form-select" name="id_modul" aria-label="Default select example" required>
+                                        <option disabled selected value>Pilih Jenis Modul</option>
                                         @foreach ($modul as $item)
                                             <option value="{{ $item->id_modul }}">{{ $item->jenis_modul}}</option>
                                         @endforeach
                                     </select>
                                 </div>
-                                {{-- <div class="mb-3">
-                                    <strong><label class="form-label">Kuota Modul</label></strong>
-                                    <input type="number" class="form-control" nama="kuota">
-                                </div> --}}
                                 <div class="mb-3">
                                     <strong><label class="form-label">Ketua Tim Pengusul</label></strong>
-                                    <select class="form-select" name="id_dosen" aria-label="Default select example">
-                                        <option selected>Pilih Ketua Tim Untuk Pengajuan Modul Ini</option>
+                                    <select class="form-select" name="id_dosen" aria-label="Default select example" required>
+                                        <option disabled selected value>Pilih Ketua Tim Untuk Pengajuan Modul Ini</option>
                                         @foreach ($dosen as $item)
                                             <option value="{{ $item->id_dosen }}">{{ $item->nama}}</option>
                                         @endforeach
                                     </select>
                                 </div>
                                 <div class="mb-3">
-                                    <strong><label for="formFile" class="form-label">Upload Proposal Pengajuan (PDF)</label></strong>
-                                    <input class="form-control" type="file" id="formFile">
+                                    <strong><label for="path_proposal" class="form-label">Upload Proposal Pengajuan (PDF)</label></strong>
+                                    <input class="form-control" name="path_proposal" type="file" id="path_proposal" >
                                 </div>
 
                                 <input id="btn-sa" class="btn btn-success btn-lg " type="submit" value="Submit">
                             </form>
                         </div>
-
 
                         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
                         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

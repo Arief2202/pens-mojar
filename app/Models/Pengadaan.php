@@ -10,7 +10,7 @@ class Pengadaan extends Model
 {
     protected $table = "pengadaan";
     protected $primaryKey = "id";
-    protected $fillable = ['id', 'id_matkul', 'id_modul', 'id_dosen', 'id_prodi', 'kuota'];
+    protected $fillable = ['id', 'id_matkul', 'id_modul', 'id_dosen', 'id_prodi', 'id_pengusul', 'kuota', 'path_proposal'];
 
     public function matkul()
     {

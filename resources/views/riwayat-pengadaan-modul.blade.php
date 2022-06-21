@@ -8,7 +8,7 @@
             <div class="col-sm-12">
                 <div class="card p-2">
                     <div class="card-body">
-                        <div class="btn-group">
+                        {{-- <div class="btn-group">
                             <button type="button" class="btn btn-outline-primary dropdown-toggle"
                                 class="v-label v-label--active theme--light primary--text" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -37,7 +37,8 @@
                                 <a class="dropdown-item" href="#">Semester 8</a>
                             </div>
                         </div>
-                        {{-- <div class="btn-group">
+                        
+                        <div class="btn-group">
                             <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 Jenjang
@@ -46,10 +47,11 @@
                                 <a class="dropdown-item" href="#">D3</a>
                                 <a class="dropdown-item" href="#">D4</a>
                             </div>
-                        </div> --}}
+                        </div>
                         <br>
-                        <br>
-                        <div class="table-responsive">
+                        <br> --}}
+
+                        <div class="table-responsive table-hover">
                             <table id="example" class="table">
                                 <thead>
                                     <tr>
