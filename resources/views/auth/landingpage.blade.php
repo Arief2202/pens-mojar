@@ -136,7 +136,7 @@
               <!-- Team item -->
               <div class=" col-md-4 col-sm-4 mb-4">
                   <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/brodin.png" alt="" width="100" class="img-fluid rounded-circle mb-4 img-thumbnail shadow-sm">
-                      <h5 class="mb-0">Muhammd Syarifudin</h5><span class="small text-uppercase text-muted">Front End Dev</span>
+                      <h5 class="mb-0">Muhammad Syarifudin</h5><span class="small text-uppercase text-muted">Front End Dev</span>
                   </div>
               </div>
               <div class="col-md-4 col-sm-4 mb-4">
@@ -229,7 +229,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">A4 Team</a>
+        Designed by <a class="copyright-tim" href="https://bootstrapmade.com/">A4 Team</a>
       </div>
     </div>
   </footer><!-- End Footer -->

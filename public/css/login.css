@@ -4560,6 +4560,9 @@ html:not([dir=rtl]) .dropleft .dropdown-toggle:empty::after {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.cil-user, .cil-lock-locked{
+  color: #103967;
+}
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;

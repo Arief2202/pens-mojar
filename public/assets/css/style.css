@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5777ba;
+  background: #103967;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #748ec6;
+  background: #F3C808;
   color: #fff;
 }
 .back-to-top.active {
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-family: "Raleway", sans-serif;
   font-size: 15px;
-  color: #47536e;
+  color: #103967;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #5777ba;
+  color: #F3C808;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
   background: #103967;
@@ -396,7 +396,7 @@ section {
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5777ba;
+  color: #103967;
   font-family: "Poppins", sans-serif;
 }
 .section-title p {
@@ -457,11 +457,12 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
+  color: #103967;
 }
 .features .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #5777ba;
+  color: #103967;
 }
 .features .content .icon-box p {
   font-size: 15px;
@@ -717,6 +718,24 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Card
+--------------------------------------------------------------*/
+#card-tim{
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  background-color: #fff;
+  border-color: #d8dbe0;
+}
+
+/*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .accordion-list {
@@ -913,11 +932,10 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
   padding: 0 0 30px 0;
   color: #47536e;
   font-size: 14px;
-  background: #eff2f8;
+  background: #103967;
 }
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -1048,13 +1066,17 @@ section {
 #footer .copyright {
   text-align: center;
   float: left;
-  color: #47536e;
+  color: white;
+}
+#footer .copyright-tim {
+  text-align: center;
+  color: #F3C808;
 }
 #footer .credits {
   float: right;
   text-align: center;
   font-size: 13px;
-  color: #47536e;
+  color: white;
 }
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
