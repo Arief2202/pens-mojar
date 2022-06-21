@@ -41,8 +41,8 @@
     </div>
 
     <footer class="c-footer">
-        <div><a href="https://">A4 RPL</a> © 2022 creativeLabs.</div>
-        <div class="mfs-auto">Powered by&nbsp;<a href="https://">A4 TEAM</a></div>
+        <div><a id= "name-tim" href="https://">A4 RPL</a> © 2022 creativeLabs.</div>
+        <div class="mfs-auto">Powered by&nbsp;<a id= "name-tim" href="https://">A4 TEAM</a></div>
     </footer>
 </div>
 

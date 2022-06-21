@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #103967;
+  background: #103968;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -35,11 +35,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: #f2c808;
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #F3C808;
+  background: #f2c808;
   color: #fff;
 }
 .back-to-top.active {
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
 }
 #header.header-scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: #103968;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #header .logo h1 {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #103967;
+  color: white;
   text-decoration: none;
 }
 #header .logo img {
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-family: "Raleway", sans-serif;
   font-size: 15px;
-  color: #103967;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -124,19 +124,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #F3C808;
+  color: #f2c808;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-  background: #103967;
-  color: #fff;
+  background: #f2c808;
+  color: #000;
   padding: 12px 25px;
   margin-left: 30px;
   line-height: 1;
   border-radius: 50px;
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  background: #F3C808;
-  color: #000;
+  background: #f2c808;
+  color: #fff;
 }
 .navbar .dropdown ul {
   display: block;
@@ -309,11 +309,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 500;
   line-height: 56px;
-  color: #103967;
+  color: #103968;
   font-family: "Poppins", sans-serif;
 }
 #hero h2 {
-  color: #103967db;
+  color: #103968db;
   margin-bottom: 50px;
   font-size: 20px;
 }
@@ -384,7 +384,9 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f5fa;
+  background-image: url(https://www.pens.ac.id/wp-content/uploads/2018/02/blue-e1522375619807.jpg)!important;
+  background: no-repeat;
+  background-size: cover;
 }
 
 .section-title {
@@ -396,7 +398,15 @@ section {
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #103967;
+  color: #103968;
+  font-family: "Poppins", sans-serif;
+}
+#our-team{
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 .section-title p {
@@ -457,12 +467,12 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 5px 0 10px 60px;
-  color: #103967;
+  color: #103968;
 }
 .features .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #103967;
+  color: #103968;
 }
 .features .content .icon-box p {
   font-size: 15px;
@@ -720,19 +730,17 @@ section {
 /*--------------------------------------------------------------
 # Card
 --------------------------------------------------------------*/
-#card-tim{
-  margin-bottom: 30px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-clip: border-box;
-  background-color: #fff;
-  border-color: #d8dbe0;
+.rounded{
+  border: none !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1) !important;
+}
+#profesi{
+  color: #103968 !important;
+}
+.rounded-circle{
+  border: none !important;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1) !important;
 }
 
 /*--------------------------------------------------------------
@@ -806,16 +814,21 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+iframe{
+  border-radius: 5px !important;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
 .contact .info {
   padding: 20px 40px;
-  background: #f1f3f6;
+  background: #103968;
   color: #47536e;
   text-align: center;
   border: 1px solid #fff;
+  border-radius: 5px;
 }
 .contact .info i {
   font-size: 48px;
-  color: #9fb2d8;
+  color: #f2c808;
   margin-bottom: 15px;
 }
 .contact .info h4 {
@@ -825,9 +838,11 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  color: #f2c808;
 }
 .contact .info p {
   font-size: 15px;
+  color: #f2c808;
 }
 .contact .php-email-form {
   width: 100%;
@@ -935,7 +950,7 @@ section {
   padding: 0 0 30px 0;
   color: #47536e;
   font-size: 14px;
-  background: #103967;
+  background: #103968;
 }
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -1070,7 +1085,7 @@ section {
 }
 #footer .copyright-tim {
   text-align: center;
-  color: #F3C808;
+  color: #f2c808;
 }
 #footer .credits {
   float: right;

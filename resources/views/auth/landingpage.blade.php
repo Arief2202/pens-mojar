@@ -128,37 +128,37 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Our Team</h2>
+          <h2 id="our-team">Our Team</h2>
         </div>
 
         <div class="container">
           <div class="row text-center">
               <!-- Team item -->
               <div class=" col-md-4 col-sm-4 mb-4">
-                  <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/brodin.png" alt="" width="100" class="img-fluid rounded-circle mb-4 img-thumbnail shadow-sm">
-                      <h5 class="mb-0">Muhammad Syarifudin</h5><span class="small text-uppercase text-muted">Front End Dev</span>
-                  </div>
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/brodin.png" alt="" width="100" class="img-fluid rounded-circle mb-4 img-thumbnail shadow-sm">
+                    <h5 class="mb-0" id="profesi">Muhammad Syarifudin</h5><span class="small text-uppercase text-muted">Front End Dev</span>
+                </div>
               </div>
               <div class="col-md-4 col-sm-4 mb-4">
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/lisa.jpg" alt="" width="100" class="img-fluid rounded-circle mb-4 img-thumbnail shadow-sm">
-                    <h5 class="mb-0">Lisa Hidayatus Sholihah</h5><span class="small text-uppercase text-muted">Product Owner</span>
+                    <h5 class="mb-0" id="profesi">Lisa Hidayatus Sholihah</h5><span class="small text-uppercase text-muted">Product Owner</span>
                 </div>
             </div>
 
             <div class="col-md-4 col-sm-4 mb-4">
               <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/bara.jpg" alt="" width="100" class="img-fluid rounded-circle mb-4 img-thumbnail shadow-sm">
-                  <h5 class="mb-0">Muklis Bara Pamungkas</h5><span class="small text-uppercase text-muted">Front End Dev</span>
+                  <h5 class="mb-0" id="profesi">Muklis Bara Pamungkas</h5><span class="small text-uppercase text-muted">Front End Dev</span>
               </div>
           </div>
         
           <div class="col-md-4 col-sm-4 mb-4">
             <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/bayu.jpg" alt="" width="100" class="img-fluid rounded-circle mb-4 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Bayu Hidayah Nur Muhammad</h5><span class="small text-uppercase text-muted">Back End Dev</span>
+                <h5 class="mb-0" id="profesi">Bayu Hidayah Nur M</h5><span class="small text-uppercase text-muted">Back End Dev</span>
             </div>
         </div>
         <div class="col-md-4 col-sm-4 mb-4">
           <div class="bg-white rounded shadow-sm py-5 px-4"><img src="images/haikal.jpg" alt="" width="100" class="img-fluid rounded-circle mb-4 img-thumbnail shadow-sm">
-              <h5 class="mb-0">Mustofa Haikal</h5><span class="small text-uppercase text-muted">UI/UX Designer</span>
+              <h5 class="mb-0" id="profesi">Mustofa Haikal</h5><span class="small text-uppercase text-muted">UI/UX Designer</span>
              
           </div>
       </div>
@@ -176,9 +176,10 @@
 
           <div class="col-lg-7">
             <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6919770741156!2d112.79156701284009!3d-7.275847094748338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa10ea2ae883%3A0xbe22c55d60ef09c7!2sPoliteknik%20Elektronika%20Negeri%20Surabaya!5e0!3m2!1sid!2sid!4v1615815731897!5m2!1sid!2sid"
-        class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6919770741156!2d112.79156701284009!3d-7.275847094748338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa10ea2ae883%3A0xbe22c55d60ef09c7!2sPoliteknik%20Elektronika%20Negeri%20Surabaya!5e0!3m2!1sid!2sid!4v1615815731897!5m2!1sid!2sid"
+              class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
 
           <div class="col-lg-5">
             <div class="row">

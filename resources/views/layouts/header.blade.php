@@ -21,7 +21,7 @@
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0">
-            <div class="dropdown-header bg-light py-2">
+            <div class="dropdown-header bg-light py-2" id="profile">
                 <strong class="d-block" style="font-size: 16px; letter-spacing: 1px">{{Auth::user()->name}}</strong>
                 {{Auth::user()->role->nama_role}}
             </div>
