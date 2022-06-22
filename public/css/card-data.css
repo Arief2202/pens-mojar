@@ -5,12 +5,12 @@
 
 .tile{
 	width: 100%;
-	background:#fff;
-	border-radius: 2px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	background: #d7dadd;
+	border-radius: 5px;
+	box-shadow: 0px 0 30px rgba(1, 49, 133, 0.197);
 	float:left;
-  	transform-style: preserve-3d;
-  	margin: 10px 5px;
+	transform-style: preserve-3d;
+	margin: 10px 5px;
 }
 /* 
 .tile:hover {
@@ -24,13 +24,15 @@
 
 .header{
 	border-bottom:1px solid #ebeff2;
-	background:#f7f8fa;
+	background:#103968;
 	padding:19px 0;
 	text-align:center;
-	color:#59687f;
+	color:#f2c808;
 	font-size:600;
 	font-size:19px;	
 	position:relative;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .banner-img {
@@ -43,12 +45,15 @@
 }
 
 .dates{
-	border:1px solid #ebeff2;
+	/* border:1px solid #103968; */
+	background:#fff;
+	/* box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1); */
+	border: 1px solid #10396835;
 	border-radius:5px;
 	padding:20px 0px;
 	margin:10px 20px;
 	font-size:16px;
-	color:#5aadef;
+	color:#103968;
 	font-weight:600;	
 	overflow:auto;
 }
@@ -58,10 +63,15 @@
 	text-align:center;
 	position:relative;
 }
-.dates strong,
+.dates strong{
+	display:block;
+	color:#103968;
+	font-size:11px;
+	font-weight:700;
+}
 .stats strong{
 	display:block;
-	color:#98a0a9;
+	color:#103968;
 	font-size:11px;
 	font-weight:700;
 }
@@ -74,23 +84,30 @@
 	background:#ebeff2;
 }
 .stats{
-	border-top:1px solid #ebeff2;
-	background:#f7f8fa;
+	border-top:1px solid #10396835;
+	background:#fff;
 	overflow:auto;
 	padding:15px 0;
 	font-size:16px;
-	color:#59687f;
+	color:#103968;
 	font-weight:600;
-	border-radius: 0 0 5px 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom:1px solid #d7dadd;
+	border-right:1px solid #d7dadd;
+	border-left:1px solid #d7dadd;
 }
 .stats div{
-	border-right:1px solid #ebeff2;
+	border-right:1px solid #d7dadd;
+	color: #103968;
 	width: 33.33333%;
 	float:left;
-	text-align:center
+	text-align:center;
 }
 
-.stats div:nth-of-type(3){border:none;}
+.stats div:nth-of-type(3){
+	border:none;
+}
 
 div.footer {
 	text-align: right;

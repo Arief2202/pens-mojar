@@ -1308,14 +1308,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #f2c808;
   background-color: #103967;
   border-radius: 50px;
 }
 @media (hover: hover), (-ms-high-contrast: none) {
   .btn-primary:hover {
   background: #F3C808;
-  color: #000;
+  color: #103967;
   }
 }
 .btn-primary:focus, .btn-primary.focus {
