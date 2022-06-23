@@ -5,8 +5,8 @@
         <img src="https://infyom.com/images/logo/blue_logo_150x150.png" width="46" height="46"
             class="c-sidebar-brand-minimized" alt="Brand Logo"> --}}
 
-            <h3 class="c-sidebar-brand-full" alt="Brand Logo" >Mojar App</h3>
-            <img src="images/logomojar.png" width="46" height="46"
+            <h3 class="c-sidebar-brand-full" alt="Brand Logo" ><img src="assets/img/logo.png" alt="" class="img-fluid" width="160"></h3>
+            <img src="assets/img/logo-bulat.png" width="46" height="46"
             class="c-sidebar-brand-minimized" alt="Brand Logo">
     </div>
     <ul class="c-sidebar-nav">

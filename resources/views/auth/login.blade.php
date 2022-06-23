@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="c-app flex-row align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('{{ asset('images/pens.png') }}');">
+<body class="c-app flex-row align-items-center" style="background-image: linear-gradient(rgba(16,57,104, 0.8), rgba(16,57,104, 0.8)),url('{{ asset('images/pens.png') }}');">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-4">
