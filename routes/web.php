@@ -173,7 +173,7 @@ Route::middleware('auth')->group(function () {
     // Fitur Pengadaan Modul Ajar
     Route::get('/riwayat', [PengadaanController::class, 'index']);
     Route::get('/detail/pengadaan/{id}', [PengadaanController::class, 'indexDetail']);
-    Route::get('/pengajuan/modul', [PengadaanController::class, 'create']);
+    Route::get('/pengajuan-modul', [PengadaanController::class, 'create']);
     Route::get('/getProdi/{id}', [PengadaanController::class, 'getProdi']);
     Route::post('/riwayat', [PengadaanController::class, 'insert'])->name('insert');
 

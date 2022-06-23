@@ -46,7 +46,7 @@
 
                         <div class="tile">
                             <div class="wrapper">
-                                <div class="header">Teknik Informatika</div>
+                                <div class="header">Teknik Elektronika</div>
                                 <div class="dates">
                                     <div class="start">
                                         <strong>Alokasi Kuota Tahun Ini</strong>3
@@ -74,7 +74,7 @@
 
                         <div class="tile">
                             <div class="wrapper">
-                                <div class="header">Teknik KOmputer</div>
+                                <div class="header">Teknik Telekomunikasi</div>
                                 <div class="dates">
                                     <div class="start">
                                         <strong>Alokasi Kuota Tahun Ini</strong>3
@@ -102,35 +102,7 @@
 
                         <div class="tile">
                             <div class="wrapper">
-                                <div class="header">Teknik Informatika</div>
-                                <div class="dates">
-                                    <div class="start">
-                                        <strong>Alokasi Kuota Tahun Ini</strong>3
-                                        <span></span>
-                                    </div>
-                                    <div class="ends">
-                                        <strong>Pengajuan Modul Baru</strong>2
-                                    </div>
-                                </div>
-                                <div class="stats">
-                                    <div>
-                                        <strong>PRATIKUM</strong>3
-                                    </div>
-
-                                    <div>
-                                        <strong>TEORI</strong>2
-                                    </div>
-
-                                    <div>
-                                        <strong>INTERAKTIF</strong>5
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tile">
-                            <div class="wrapper">
-                                <div class="header">Teknik Informatika</div>
+                                <div class="header">Teknik Elektro Industri</div>
                                 <div class="dates">
                                     <div class="start">
                                         <strong>Alokasi Kuota Tahun Ini</strong>3
@@ -186,7 +158,35 @@
 
                         <div class="tile">
                             <div class="wrapper">
-                                <div class="header">Teknik Informatika</div>
+                                <div class="header">Teknik Mekatronika</div>
+                                <div class="dates">
+                                    <div class="start">
+                                        <strong>Alokasi Kuota Tahun Ini</strong>3
+                                        <span></span>
+                                    </div>
+                                    <div class="ends">
+                                        <strong>Pengajuan Modul Baru</strong>2
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div>
+                                        <strong>PRATIKUM</strong>3
+                                    </div>
+
+                                    <div>
+                                        <strong>TEORI</strong>2
+                                    </div>
+
+                                    <div>
+                                        <strong>INTERAKTIF</strong>5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div class="wrapper">
+                                <div class="header">Teknik Komputer</div>
                                 <div class="dates">
                                     <div class="start">
                                         <strong>Alokasi Kuota Tahun Ini</strong>3

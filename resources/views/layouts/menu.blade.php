@@ -9,7 +9,7 @@
         <i class="c-sidebar-nav-icon cil-history"></i>Riwayat Pengadaan Modul
     </a>
     @if(auth()->user()->id_role == 3)
-        <a class="c-sidebar-nav-link {{ (request()->is('/pengajuan/modul')) ? 'active' : '' }}" href="/pengajuan/modul">
+        <a class="c-sidebar-nav-link {{ (request()->is('/pengajuan-modul')) ? 'active' : '' }}" href="/pengajuan-modul">
             <i class="c-sidebar-nav-icon cil-book"></i>Pengadaan Modul
         </a>
     @endif
