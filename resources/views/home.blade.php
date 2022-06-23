@@ -12,17 +12,17 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-columns">
-                        {{-- @forelse ($datas as $item)
+                        @forelse ($datas as $item)
                         <div class="tile">
                             <div class="wrapper">
                                 <div class="header">{{$item['nama_prodi']}}</div>
                                 <div class="dates">
                                     <div class="start">
-                                        <strong>Alokasi Kuota Tahun Ini</strong>3
+                                        <strong>Alokasi Kuota Tahun Ini</strong>2
                                         <span></span>
                                     </div>
                                     <div class="ends">
-                                        <strong>Pengajuan Modul Baru</strong>2
+                                        <strong>Pengajuan Modul Baru</strong>{{$item['data']['praktikum'] + $item['data']['teori'] + $item['data']['interaktif']}}
                                     </div>
                                 </div>
                                 <div class="stats">
@@ -42,14 +42,15 @@
                         </div>
                         @empty
                             
-                        @endforelse --}}
+                        @endforelse
 
+{{-- 
                         <div class="tile">
                             <div class="wrapper">
                                 <div class="header">Teknik Elektronika</div>
                                 <div class="dates">
                                     <div class="start">
-                                        <strong>Alokasi Kuota Tahun Ini</strong>3
+                                        <strong>Alokasi Kuota Tahun Ini</strong>{{$kuota->kuota}}
                                         <span></span>
                                     </div>
                                     <div class="ends">
@@ -218,6 +219,6 @@
             </div>
         </div> 
     </div>
-</div>    
+</div>     --}}
 
 @endsection

@@ -14,7 +14,7 @@
         </a>
     @endif
     @if (in_array(Auth::user()->id_role, [1, 2]))
-    <a class="c-sidebar-nav-link {{ (request()->is('/alokasi/kuota')) ? 'active' : '' }}" href="/under-maintain">
+    <a class="c-sidebar-nav-link {{ (request()->is('/set/kuota')) ? 'active' : '' }}" href="/set/kuota">
         <i class="c-sidebar-nav-icon cil-book"></i>Alokasi Kuota Prodi
     </a>
     @endif

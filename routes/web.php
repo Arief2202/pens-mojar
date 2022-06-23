@@ -7,6 +7,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TimelineController;
 use App\Http\Controllers\PengadaanController;
+use App\Http\Controllers\KuotaController;
 
 
 /*
@@ -165,10 +166,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/timeline', [TimelineController::class, 'insert']);
     Route::delete('/list-timeline/{id}', [TimelineController::class, 'destroy']);
 
-    // Fitur Update Deadline
-    Route::get('/update-timeline', function () {
-        return view('update-timeline');
-    });
+    // Fitur set kuota
+    Route::get('/set/kuota', [KuotaController::class, 'create']);
+    Route::get('/getProdi/{id}', [KuotaController::class, 'getProdi']);
+    Route::post('/set/kuota', [KuotaController::class, 'insert']);
 
     // Fitur Pengadaan Modul Ajar
     Route::get('/riwayat', [PengadaanController::class, 'index']);
