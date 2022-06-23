@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="icon" href="assets/img/logo-bulat.png">
+    <title>Select Role | Mojar App</title>
     <link rel="stylesheet" href="{{ url('css/super-admin.css') }}" crossorigin="anonymous">
 </head>
 <body>

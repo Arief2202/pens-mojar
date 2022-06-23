@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
-    <link rel="icon" href="images/logomojar.png">
+    <link rel="icon" href="assets/img/logo-bulat.png">
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <!-- CoreUI CSS -->

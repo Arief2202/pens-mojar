@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <title>Login | {{ config('app.name') }}</title>
-    <link rel="icon" href="images/logomojar.png">
+    <link rel="icon" href="assets/img/logo-bulat.png">
 
     <!-- CoreUI CSS -->
     {{-- <link rel="stylesheet" href="{{ url('css/super-admin.css') }}" crossorigin="anonymous"> --}}
