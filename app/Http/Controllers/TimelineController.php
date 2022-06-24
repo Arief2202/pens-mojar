@@ -13,6 +13,12 @@ class TimelineController extends Controller
         return view('timeline', compact(['dataTimeline']));
     }
 
+    public function index2()
+    {
+        $dataTimeline = Timeline::all();
+        return view('list-timeline', compact(['dataTimeline']));
+    }
+
     public function create()
     {
         return view('create-timeline');

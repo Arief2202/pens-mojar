@@ -12,7 +12,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-columns">
-                        @forelse ($datas as $item)
+                        {{-- @forelse ($datas as $item)
                         <div class="tile">
                             <div class="wrapper">
                                 <div class="header">{{$item['nama_prodi']}}</div>
@@ -42,15 +42,15 @@
                         </div>
                         @empty
                             
-                        @endforelse
+                        @endforelse --}}
 
-{{-- 
+
                         <div class="tile">
                             <div class="wrapper">
                                 <div class="header">Teknik Elektronika</div>
                                 <div class="dates">
                                     <div class="start">
-                                        <strong>Alokasi Kuota Tahun Ini</strong>{{$kuota->kuota}}
+                                        <strong>Alokasi Kuota Tahun Ini</strong>3
                                         <span></span>
                                     </div>
                                     <div class="ends">
@@ -219,6 +219,6 @@
             </div>
         </div> 
     </div>
-</div>     --}}
+</div>    
 
 @endsection
