@@ -163,6 +163,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/list-timeline', [TimelineController::class, 'index2']);
     Route::get('/create-timeline', [TimelineController::class, 'create']);
     Route::post('/list-timeline', [TimelineController::class, 'insert']);
+    Route::get('/list-timeline/{id}/edit',[TimelineController::class, 'edit']);
+    Route::put('/list-timeline/{id}',[TimelineController::class, 'update']);
     Route::post('/timeline', [TimelineController::class, 'insert']);
     Route::delete('/list-timeline/{id}', [TimelineController::class, 'destroy']);
 

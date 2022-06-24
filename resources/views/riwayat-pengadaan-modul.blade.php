@@ -2,7 +2,7 @@
 @section('title', 'RIWAYAT PENGADAAN MODUL | MOJAR APP')
 @section('content')
     <div class="container">
-        <h2 class="tittle-utama">Riwayat Pengadaan Modul Ajar</h2>
+        <h2 class="tittle-utama">List Riwayat Pengadaan Modul Ajar</h2>
         <br>
         <div class="row">
             <div class="col-sm-12">

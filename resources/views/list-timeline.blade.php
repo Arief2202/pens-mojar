@@ -9,7 +9,8 @@
                 <div class="card p-2">
                     <div class="card-body">
                         <div>
-                            <a href="/create-timeline"><button class="btn btn-primary" id="btn-sa">Tambah List Timeline</button></a>
+                            <a href="/create-timeline"><button class="btn btn-primary" id="btn-sa">Tambah List
+                                    Timeline</button></a>
                             <br>
                             <br>
                             <table class="table">
@@ -30,11 +31,15 @@
                                             <td>{{ $item->tgl_akhir }}</td>
                                             <td>{{ $item->judul }}</td>
                                             <td>
-                                                <form action="/list-timeline/{{ $item->id }}" method="POST"><button class="btn btn-danger" type="submit">
-                                                <i class="bi bi-trash-fill"></i></button>
-                                                @method('DELETE')
-                                                @csrf
+                                                <a href="/list-timeline/{{ $item->id }}/edit"><button class="btn btn-primary"
+                                                        type="submit"><i class="bi bi-pen-fill"></i></button></a>
                                             </form>
+                                                <form action="/list-timeline/{{ $item->id }}" method="POST"><button
+                                                        class="btn btn-danger" type="submit">
+                                                        <i class="bi bi-trash-fill"></i></button>
+                                                    @method('DELETE')
+                                                    @csrf
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach

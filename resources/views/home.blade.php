@@ -4,7 +4,7 @@
 @section('content')
 <div class="container">
     @csrf
-    <h2 class="tittle-utama">Kuota Pengadaan Modul Tiap Prodi</h2>
+    <h2 class="tittle-utama">Data Pengadaan Modul Tahun 2022</h2>
     {{-- <h5 class="card-title tittle-login">Beranda</h5> --}}
     <br>
     <div class="row">
@@ -12,7 +12,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-columns">
-                        {{-- @forelse ($datas as $item)
+                        @forelse ($datas as $item)
                         <div class="tile">
                             <div class="wrapper">
                                 <div class="header">{{$item['nama_prodi']}}</div>
@@ -42,9 +42,9 @@
                         </div>
                         @empty
                             
-                        @endforelse --}}
+                        @endforelse
 
-
+{{-- 
                         <div class="tile">
                             <div class="wrapper">
                                 <div class="header">Teknik Elektronika</div>
@@ -211,7 +211,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         
 
                     </div>

@@ -39,6 +39,19 @@ class TimelineController extends Controller
         return redirect('timeline');
     }
 
+    public function edit($id)
+    {
+        $timeline = Timeline::find($id);
+        return view('edit-timeline', compact(['timeline']));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $timeline = Timeline::find($id);
+        $timeline->update($request->all());
+        return redirect('/list-timeline');
+    }
+
     public function destroy($id)
     {
         $data = Timeline::find($id);
