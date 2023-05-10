@@ -23,9 +23,9 @@
         <i class="c-sidebar-nav-icon cil-people"></i>Set Tim Reviewer
     </a>
     @endif --}}
-    <a class="c-sidebar-nav-link {{ (request()->is('/dokumen')) ? 'active' : '' }}" href="/under-maintain">
+    {{-- <a class="c-sidebar-nav-link {{ (request()->is('/dokumen')) ? 'active' : '' }}" href="/under-maintain">
         <i class="c-sidebar-nav-icon cil-file"></i>Dokumen Pengadaan
-    </a>
+    </a> --}}
     <a class="c-sidebar-nav-link {{ (request()->is('/timeline')) ? 'active' : '' }}" href="/timeline">
         <i class="c-sidebar-nav-icon cil-calendar"></i>Timeline
     </a>

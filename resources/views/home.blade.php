@@ -15,7 +15,7 @@
                         @forelse ($datas as $item)
                         <div class="tile">
                             <div class="wrapper">
-                                <div class="header">{{$item['nama_prodi']}}</div>
+                                <div class="header">D3 {{$item['nama_prodi']}}</div>
                                 <div class="dates">
                                     <div class="start">
                                         <strong>Alokasi Kuota Tahun Ini</strong>2

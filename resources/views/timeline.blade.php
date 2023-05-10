@@ -7,7 +7,9 @@
                 <div class="card">
                     <div class="card-body">
                         {{-- <h6 class="card-title">Timeline</h6> --}}
+                        @if (auth()->user()->id_role == 2)
                         <a href="/list-timeline"><button class="btn btn-primary">Set Timeline</button></a>
+                        @endif
                         <div id="content">
                             <ul class="timeline">
                                 @foreach ($dataTimeline as $item)

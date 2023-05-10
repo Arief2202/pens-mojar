@@ -15,4 +15,9 @@ class Prodi extends Model
     {
         return $this->hasMany(Dosen::class);
     }
+
+    public function akademik()
+    {
+        return $this->belongsTo(Akademik::class, 'id_akademik', 'id');
+    }
 }

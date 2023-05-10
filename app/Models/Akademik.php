@@ -10,5 +10,5 @@ class Akademik extends Model
     use HasFactory;
     protected $table = "akademik";
     protected $primaryKey = "id";
-    protected $fillable = ['id', 'kode_akademik'];
+    protected $fillable = ['id', 'akademik'];
 }
